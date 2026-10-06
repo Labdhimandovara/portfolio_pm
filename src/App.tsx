@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { ProductFramework } from './components/ProductFramework';
-import { ProductJourneyMap } from './components/ProductJourneyMap';
-import { FeaturedWork } from './components/FeaturedWork';
-import { MetricsWall } from './components/MetricsWall';
-import { ProductSkills } from './components/ProductSkills';
-import { LeadershipTimeline } from './components/LeadershipTimeline';
-import { HackathonsSection } from './components/HackathonsSection';
-import { AboutSection } from './components/AboutSection';
-import { ContactSection } from './components/ContactSection';
-import { Footer } from './components/Footer';
+import { DevanshuStyleNavbar } from './components/DevanshuStyleNavbar';
+import { DevanshuStyleHero } from './components/DevanshuStyleHero';
+import { DevanshuStyleWorks } from './components/DevanshuStyleWorks';
+import { DevanshuStyleAppreciations } from './components/DevanshuStyleAppreciations';
+import { DevanshuStyleAbout } from './components/DevanshuStyleAbout';
+import { DevanshuStyleJourney } from './components/DevanshuStyleJourney';
+import { DevanshuStyleEasterEgg } from './components/DevanshuStyleEasterEgg';
+import { DevanshuStyleFooter } from './components/DevanshuStyleFooter';
 import { X, Mail, Copy, Check, ArrowUpRight } from 'lucide-react';
 import { PERSONAL_INFO } from './data/portfolioData';
 
@@ -30,58 +26,37 @@ export function App() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const scrollToContact = () => {
-    const el = document.getElementById('contact');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      setContactModalOpen(true);
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-[#FAF9F6] text-[#121214] font-sans selection:bg-blue-600/15 selection:text-blue-600">
+    <div className="min-h-screen bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased selection:bg-amber-300 selection:text-neutral-900">
       
-      {/* Sticky Translucent Navbar */}
-      <Navbar onOpenContact={() => setContactModalOpen(true)} />
+      {/* Devanshu Chauhan Style Top Nav */}
+      <DevanshuStyleNavbar onOpenContact={() => setContactModalOpen(true)} />
 
-      {/* Main Content Sections */}
+      {/* Main Page Flow */}
       <main>
-        {/* Hero Section */}
-        <Hero onOpenContact={scrollToContact} />
+        {/* Hero Section with 3D Avatar Centerpiece */}
+        <DevanshuStyleHero onOpenContact={() => setContactModalOpen(true)} />
 
-        {/* Product Thinking Framework (4 Steps) */}
-        <ProductFramework />
+        {/* My Works Editorial Project Showcase */}
+        <DevanshuStyleWorks />
 
-        {/* From Idea to Product (10 Interactive Stages) */}
-        <ProductJourneyMap />
+        {/* Appreciations & Recognition */}
+        <DevanshuStyleAppreciations />
 
-        {/* Selected Product Work (Editorial Deep Dives) */}
-        <FeaturedWork />
+        {/* About Me & Super Powers */}
+        <DevanshuStyleAbout />
 
-        {/* Product Metrics Wall (10 Verified Metrics) */}
-        <MetricsWall />
+        {/* Chronological My Journey */}
+        <DevanshuStyleJourney />
 
-        {/* Interactive Product Toolkit */}
-        <ProductSkills />
-
-        {/* Leadership & Ownership Progression */}
-        <LeadershipTimeline />
-
-        {/* Competitive Hackathons */}
-        <HackathonsSection />
-
-        {/* Grounded About Story */}
-        <AboutSection />
-
-        {/* Closing Contact Statement */}
-        <ContactSection />
+        {/* Interactive Flower Easter Egg */}
+        <DevanshuStyleEasterEgg />
       </main>
 
       {/* Footer */}
-      <Footer />
+      <DevanshuStyleFooter />
 
-      {/* Quick Connect Floating Modal */}
+      {/* Quick Connect Modal */}
       {contactModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-neutral-950/60 backdrop-blur-md animate-in fade-in duration-200">
           <div className="relative w-full max-w-md p-6 sm:p-8 rounded-3xl bg-white border border-neutral-200 shadow-2xl text-left">
