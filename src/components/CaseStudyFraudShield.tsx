@@ -10,7 +10,8 @@ import {
   Cpu, 
   Lock, 
   MessageSquare,
-  ArrowRight
+  ArrowRight,
+  ExternalLink
 } from 'lucide-react';
 
 export const CaseStudyFraudShield: React.FC = () => {
@@ -77,6 +78,25 @@ export const CaseStudyFraudShield: React.FC = () => {
         <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
           A public-facing AI safety platform designed for non-technical citizens. Eliminating high-stress scam ambiguity through fast ML verification, plain-English explainability, and calm emergency guidance.
         </p>
+
+        {/* Live Demo Video Callout */}
+        <div className="pt-2 flex flex-wrap items-center gap-3">
+          <a
+            href="https://drive.google.com/file/d/1SMmUGr6aV1JcZeKRfOI79GyUs5Xz6X86/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-purple-700 hover:bg-purple-800 text-white font-bold text-xs shadow-md transition-all active:scale-95"
+          >
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z"/>
+            </svg>
+            <span>Watch Live Product Demo Video (Google Drive)</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+          <span className="text-xs font-mono text-neutral-500">
+            Full walkthrough of deepfake call verification & Streamlit dashboard
+          </span>
+        </div>
       </div>
 
       {/* Interactive 3-Scenario Cards Selector */}

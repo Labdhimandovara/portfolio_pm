@@ -20,7 +20,8 @@ import { CaseStudyMathEngineer } from './CaseStudyMathEngineer';
 import { CaseStudyFraudShield } from './CaseStudyFraudShield';
 import { RealEstateSection } from './RealEstateSection';
 import { VoiceBenchmarkSection } from './VoiceBenchmarkSection';
-import { SystemsSection } from './SystemsSection';
+import { CaseStudyADAS } from './CaseStudyADAS';
+import { CaseStudyEmodio } from './CaseStudyEmodio';
 
 export const PortfolioWorks: React.FC = () => {
   const [expandedProject, setExpandedProject] = useState<string | null>('raya');
@@ -99,16 +100,28 @@ export const PortfolioWorks: React.FC = () => {
       accent: '#028090'
     },
     {
-      id: 'systems',
-      title: '5G ADAS & Acoustic Deep Learning',
-      brand: 'Connected Systems & Automotive ML',
-      projectCount: '2 Core ML Implementations',
+      id: 'adas',
+      title: '5G ADAS & IoV Collision Prevention',
+      brand: 'Automotive ML & Connected Vehicles',
+      projectCount: 'Real-Time CV & 5G V2X',
       year: '2025 - 2026',
-      role: 'Signal Processing & ML Engineer',
-      skills: '5G Internet of Vehicles (IoV), Trajectory Prediction, LSTM, MFCC Audio Features',
-      scaleHighlight: '98% Accident Prediction Accuracy • 15,000+ Speech Audio Clips (RAVDESS/CREMA-D)',
-      description: 'Safety-critical systems engineering combining real-time 5G telematics collision trajectory forecasting with an LSTM neural network classifying 5 vocal emotional states.',
+      role: 'Automotive Systems & ML Engineer',
+      skills: 'Computer Vision, Multi-Vehicle Bounding Box Tracking, 5G IoV, Kalman Filters, V2X',
+      scaleHighlight: '98% Accident Prediction Accuracy • Real-Time Dashcam Vehicle Inference',
+      description: 'Safety-critical automotive ML stack combining real-time camera object detection across diverse Indian traffic (autorickshaws, trucks, cars) with 5G V2X trajectory forecasting to avert multi-vehicle collisions.',
       accent: '#10B981'
+    },
+    {
+      id: 'emodio',
+      title: 'Emodio — Acoustic AI & Vocal Biomarkers',
+      brand: 'LaserHacks 2025 Global Finalist (Lasell University, USA)',
+      projectCount: '15,000+ Vocal Samples • BiLSTM',
+      year: '2025',
+      role: 'Lead Audio ML Engineer & Product Architect',
+      skills: 'Acoustic Biomarkers, MFCC & Prosody, BiLSTM Neural Network, Telehealth Teletherapy',
+      scaleHighlight: 'Day-2 Global Finalist Selection • 15,000+ Speech Audio Clips (RAVDESS/CREMA-D)',
+      description: 'AI-driven vocal biomarker companion developed for LaserHacks 2025 at Lasell University USA. Analyzes micro-acoustic voice tremor, spectral contrast, and MFCC features using a Bidirectional LSTM for longitudinal patient teletherapy tracking.',
+      accent: '#3B82F6'
     }
   ];
 
@@ -233,7 +246,8 @@ export const PortfolioWorks: React.FC = () => {
                       {proj.id === 'fraud' && <CaseStudyFraudShield />}
                       {proj.id === 'voice' && <VoiceBenchmarkSection />}
                       {proj.id === 'riya' && <RealEstateSection />}
-                      {proj.id === 'systems' && <SystemsSection />}
+                      {proj.id === 'adas' && <CaseStudyADAS />}
+                      {proj.id === 'emodio' && <CaseStudyEmodio />}
                     </motion.div>
                   )}
                 </AnimatePresence>

@@ -9,8 +9,10 @@ import {
   Radio, 
   Globe2, 
   Sparkles,
-  ArrowRight
+  ArrowRight,
+  ExternalLink
 } from 'lucide-react';
+import voiceChatbotImg from '../assets/portfolio/voice_chatbot-ZyJvDKcP.png';
 
 export const VoiceBenchmarkSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'pipeline' | 'benchmark' | 'voicebot'>('pipeline');
@@ -44,6 +46,25 @@ export const VoiceBenchmarkSection: React.FC = () => {
         <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
           Quantitative benchmarking of real-time voice architectures (Agora vs Pipecat) across streaming STT, LLM inference, and TTS synthesis — paired with a 3-language multilingual voice assistant.
         </p>
+
+        {/* Live Demo Video Callout */}
+        <div className="pt-2 flex flex-wrap items-center gap-3">
+          <a
+            href="https://drive.google.com/file/d/1hXhNl4EpoqbTQzgASyrLZ2-0ezHUxKwq/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs shadow-md transition-all active:scale-95"
+          >
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z"/>
+            </svg>
+            <span>Watch Live VoiceBot Demo Video (Google Drive)</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+          <span className="text-xs font-mono text-neutral-500">
+            Real-time streaming conversation, STT latency & multilingual switching
+          </span>
+        </div>
       </div>
 
       {/* Section Nav Pill */}
@@ -218,6 +239,27 @@ export const VoiceBenchmarkSection: React.FC = () => {
                 <h5 className="text-sm font-bold text-neutral-900">Mixed Code-Switching</h5>
                 <p className="text-xs text-neutral-500 mt-1">Seamless bilingual Hinglish/Telugish real-time dialogue understanding.</p>
               </div>
+            </div>
+
+            {/* Real VoiceBot Application Interface Screenshot */}
+            <div className="rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-900 p-2 shadow-sm text-center">
+              <div className="px-3 py-2 flex items-center justify-between text-xs text-neutral-300 font-mono border-b border-neutral-800 mb-2">
+                <span>Real VoiceBot Application Interface</span>
+                <a
+                  href="https://drive.google.com/file/d/1hXhNl4EpoqbTQzgASyrLZ2-0ezHUxKwq/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:text-orange-300 flex items-center gap-1 text-[11px]"
+                >
+                  <span>Watch Video Recording</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+              <img
+                src={voiceChatbotImg}
+                alt="Voice Chatbot Application Screen"
+                className="w-full h-auto max-h-[360px] object-contain mx-auto rounded-lg"
+              />
             </div>
 
             <div className="p-4 rounded-xl bg-white border border-neutral-200/80 text-xs text-neutral-600">
