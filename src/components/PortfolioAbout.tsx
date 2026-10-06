@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Sparkles, Palette, Compass, Trophy, Code2 } from 'lucide-react';
+import { Sparkles, Palette, Compass, Trophy, Code2, ZoomIn } from 'lucide-react';
 
+import labdhiFormalBlazer from '../assets/portfolio/labdhi_formal_blazer.png';
+import labdhiArtistPainting from '../assets/portfolio/labdhi_artist_painting.png';
 import labdhiGreenPortrait from '../assets/portfolio/labdhi_portrait_green.jpg';
 import labdhiFormalElevator from '../assets/portfolio/labdhi_formal_elevator.png';
-import profilePhoto from '../assets/portfolio/profile-CQEuO0j2.jpg';
 import userPhoto1 from '../assets/portfolio/user-HOK2bPUo.jpg';
+import profilePhoto from '../assets/portfolio/profile-CQEuO0j2.jpg';
 import avatar3D from '../assets/avatar_3d.jpg';
 import hackathonCake from '../assets/portfolio/cake-Khk05ZwI.jpg';
 
@@ -22,33 +24,33 @@ export const PortfolioAbout: React.FC = () => {
   const photoCards = [
     {
       id: 'photo-1',
-      src: labdhiFormalElevator,
-      title: 'Professional & Presentation',
-      subtitle: 'Hackathons & technical defense'
+      src: labdhiArtistPainting,
+      title: 'Artist & Creator',
+      subtitle: 'Holding original watercolor painting'
     },
     {
       id: 'photo-2',
-      src: userPhoto1,
-      title: 'Reading & Product Thinking',
-      subtitle: 'Exploring user behavior & systems'
+      src: labdhiFormalElevator,
+      title: 'Presentation & Defense',
+      subtitle: 'Technical product walkthroughs'
     },
     {
       id: 'photo-3',
-      src: labdhiGreenPortrait,
+      src: labdhiFormalBlazer,
       title: 'Labdhi Mandovara',
       subtitle: 'AI Engineer & Product Builder'
     },
     {
       id: 'photo-4',
-      src: profilePhoto,
-      title: 'Builder & Innovator',
-      subtitle: 'Symbiosis Institute of Technology, Pune'
+      src: labdhiGreenPortrait,
+      title: 'Campus & Community',
+      subtitle: 'Symbiosis Institute of Technology'
     },
     {
       id: 'photo-5',
-      src: avatar3D,
-      title: '3D AI Persona',
-      subtitle: 'Agentic AI & intelligent interfaces'
+      src: userPhoto1,
+      title: 'Reading & Systems',
+      subtitle: 'Product strategy & human behavior'
     }
   ];
 
@@ -182,18 +184,49 @@ export const PortfolioAbout: React.FC = () => {
                 Artist & Sketching
               </h3>
               <p className="text-xs sm:text-sm text-neutral-600 mt-1">
-                Beyond code and PRDs, I practice traditional fine-art sketching. Balancing proportions, contrast, and visual hierarchy in hand-drawn portraits directly sharpens how I design clean product experiences.
+                Beyond code and PRDs, I practice traditional fine art and watercolor sketching. Balancing proportions, contrast, and visual hierarchy in hand-drawn portraits directly sharpens how I design clean product experiences.
               </p>
             </div>
 
             <div className="flex items-center gap-2">
               <span className="text-xs font-mono text-neutral-500 bg-white px-3 py-1.5 rounded-full border border-neutral-200">
-                4 Original Sketches
+                Traditional Art & Sketches
               </span>
             </div>
           </div>
 
-          {/* Gallery of Labdhi's Actual Artworks */}
+          {/* Featured Artist Spotlight Card */}
+          <div className="mb-8 p-4 sm:p-6 rounded-2xl bg-white border border-neutral-200/90 shadow-2xs flex flex-col md:flex-row items-center gap-6">
+            <div
+              onClick={() => setSelectedArt(labdhiArtistPainting)}
+              className="w-full md:w-56 aspect-[3/4] rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 cursor-pointer group flex-shrink-0 relative"
+            >
+              <img
+                src={labdhiArtistPainting}
+                alt="Labdhi Mandovara with Watercolor Painting"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-neutral-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="p-2 rounded-full bg-white/90 text-neutral-900 shadow-sm">
+                  <ZoomIn className="w-4 h-4" />
+                </span>
+              </div>
+            </div>
+
+            <div className="space-y-2 text-left">
+              <span className="text-[10px] font-mono uppercase font-bold text-rose-600 bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-200">
+                Original Artwork
+              </span>
+              <h4 className="text-lg font-bold text-neutral-900">
+                Hand-Painted Watercolors & Sketchbook
+              </h4>
+              <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                "Art gives me an intuitive appreciation for whitespace, visual balance, and emotional resonance. When I design a screen or architect a user flow, I approach it with the same care for harmony that I bring to a blank canvas."
+              </p>
+            </div>
+          </div>
+
+          {/* Gallery of Labdhi's Fine-Art Sketches */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {artworks.map((art, idx) => (
               <div
