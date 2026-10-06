@@ -14,7 +14,7 @@ const GitHubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   </svg>
 );
 
-export const DevanshuStyleFooter: React.FC = () => {
+export const PortfolioFooter: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -73,7 +73,7 @@ export const DevanshuStyleFooter: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop Experience Banner matching Devanshu's exact footer callout */}
+        {/* Desktop Experience Banner matching Portfolio's exact footer callout */}
         <div className="p-4 rounded-2xl bg-neutral-100/70 border border-neutral-200/70 flex items-center gap-3 text-xs text-neutral-600">
           <Monitor className="w-4 h-4 text-neutral-400 shrink-0" />
           <span>
@@ -81,7 +81,7 @@ export const DevanshuStyleFooter: React.FC = () => {
           </span>
         </div>
 
-        {/* Bottom Bar matching Devanshu's footer layout */}
+        {/* Bottom Bar matching Portfolio's footer layout */}
         <div className="pt-6 border-t border-neutral-200/70 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <div className="flex items-center gap-2">
             <span className="font-bold text-neutral-900">{PERSONAL_INFO.name}</span>

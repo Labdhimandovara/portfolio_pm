@@ -22,7 +22,7 @@ import { RealEstateSection } from './RealEstateSection';
 import { VoiceBenchmarkSection } from './VoiceBenchmarkSection';
 import { SystemsSection } from './SystemsSection';
 
-export const DevanshuStyleWorks: React.FC = () => {
+export const PortfolioWorks: React.FC = () => {
   const [expandedProject, setExpandedProject] = useState<string | null>('raya');
 
   const projects = [
@@ -116,7 +116,7 @@ export const DevanshuStyleWorks: React.FC = () => {
     <section id="works" className="py-24 px-4 sm:px-8 bg-white border-t border-neutral-200/80">
       <div className="max-w-6xl mx-auto">
         
-        {/* Section Header matching Devanshu's exact layout */}
+        {/* Section Header matching Portfolio's exact layout */}
         <div className="max-w-3xl mb-14 text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-neutral-800 text-xs font-mono font-bold mb-3">
             <span>SELECTED WORK</span>
@@ -129,7 +129,7 @@ export const DevanshuStyleWorks: React.FC = () => {
           </p>
         </div>
 
-        {/* Project Editorial Cards (matching Devanshu Chauhan card typography & metadata layout) */}
+        {/* Project Editorial Cards (matching Portfolio card typography & metadata layout) */}
         <div className="space-y-6">
           {projects.map((proj, idx) => {
             const isExpanded = expandedProject === proj.id;
@@ -138,7 +138,7 @@ export const DevanshuStyleWorks: React.FC = () => {
                 key={proj.id}
                 className="rounded-3xl border border-neutral-200/90 bg-[#FBFBF9] hover:border-neutral-300 transition-all overflow-hidden shadow-xs"
               >
-                {/* Project Header Box matching Devanshu's exact metadata fields */}
+                {/* Project Header Box matching Portfolio's exact metadata fields */}
                 <div
                   onClick={() => setExpandedProject(isExpanded ? null : proj.id)}
                   className="p-6 sm:p-8 cursor-pointer flex flex-col lg:flex-row lg:items-start justify-between gap-6 bg-white hover:bg-neutral-50/70 transition-colors"
@@ -164,7 +164,7 @@ export const DevanshuStyleWorks: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Devanshu's 4-Box Metadata Grid (Brand, Projects, Year, Role, Skills) */}
+                  {/* Portfolio's 4-Box Metadata Grid (Brand, Projects, Year, Role, Skills) */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 text-left lg:w-72 shrink-0 pt-4 lg:pt-0 border-t lg:border-t-0 border-neutral-100">
                     <div className="p-2.5 rounded-xl bg-[#FBFBF9] border border-neutral-200/80">
                       <span className="text-[10px] font-mono uppercase text-neutral-400 font-bold block">

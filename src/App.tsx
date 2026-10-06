@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { DevanshuStyleNavbar } from './components/DevanshuStyleNavbar';
-import { DevanshuStyleHero } from './components/DevanshuStyleHero';
-import { DevanshuStyleWorks } from './components/DevanshuStyleWorks';
-import { DevanshuStyleAppreciations } from './components/DevanshuStyleAppreciations';
-import { DevanshuStyleAbout } from './components/DevanshuStyleAbout';
-import { DevanshuStyleJourney } from './components/DevanshuStyleJourney';
-import { DevanshuStyleEasterEgg } from './components/DevanshuStyleEasterEgg';
-import { DevanshuStyleFooter } from './components/DevanshuStyleFooter';
+import { FloatingSideNav } from './components/FloatingSideNav';
+import { PortfolioHero } from './components/PortfolioHero';
+import { PortfolioWorks } from './components/PortfolioWorks';
+import { PortfolioAppreciations } from './components/PortfolioAppreciations';
+import { PortfolioAbout } from './components/PortfolioAbout';
+import { PortfolioJourney } from './components/PortfolioJourney';
+import { PortfolioEasterEgg } from './components/PortfolioEasterEgg';
+import { PortfolioFooter } from './components/PortfolioFooter';
 import { X, Mail, Copy, Check, ArrowUpRight } from 'lucide-react';
 import { PERSONAL_INFO } from './data/portfolioData';
 
@@ -29,32 +29,34 @@ export function App() {
   return (
     <div className="min-h-screen bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased selection:bg-amber-300 selection:text-neutral-900">
       
-      {/* Devanshu Chauhan Style Top Nav */}
-      <DevanshuStyleNavbar onOpenContact={() => setContactModalOpen(true)} />
+      {/* Floating Left Vertical Navigation Dock & Top Right Connect Icons */}
+      <FloatingSideNav onOpenContact={() => setContactModalOpen(true)} />
 
-      {/* Main Page Flow */}
-      <main>
-        {/* Hero Section with 3D Avatar Centerpiece */}
-        <DevanshuStyleHero onOpenContact={() => setContactModalOpen(true)} />
+      {/* Main Page Content */}
+      <main className="pl-0 sm:pl-10">
+        {/* Hero Section with 3D Workspace, Shelf & Interactive Hotspots */}
+        <PortfolioHero onOpenContact={() => setContactModalOpen(true)} />
 
-        {/* My Works Editorial Project Showcase */}
-        <DevanshuStyleWorks />
+        {/* Selected Works Editorial Project Showcase */}
+        <PortfolioWorks />
 
-        {/* Appreciations & Recognition */}
-        <DevanshuStyleAppreciations />
+        {/* Appreciations & Recognition with real certificates and cards */}
+        <PortfolioAppreciations />
 
-        {/* About Me & Super Powers */}
-        <DevanshuStyleAbout />
+        {/* About Me 5-Card Fan Carousel, Super Powers & Fine Art Gallery */}
+        <PortfolioAbout />
 
-        {/* Chronological My Journey */}
-        <DevanshuStyleJourney />
+        {/* Chronological Journey */}
+        <PortfolioJourney />
 
         {/* Interactive Flower Easter Egg */}
-        <DevanshuStyleEasterEgg />
+        <PortfolioEasterEgg />
       </main>
 
       {/* Footer */}
-      <DevanshuStyleFooter />
+      <div className="pl-0 sm:pl-10">
+        <PortfolioFooter />
+      </div>
 
       {/* Quick Connect Modal */}
       {contactModalOpen && (
@@ -78,7 +80,7 @@ export function App() {
               Get in Touch with Labdhi
             </h3>
             <p className="text-xs text-neutral-600 mt-1">
-              Interested in discussing APM, PM, or AI Product opportunities? Reach out directly.
+              Interested in discussing APM, PM, or AI Product roles? Reach out directly.
             </p>
 
             <div className="mt-6 space-y-3">

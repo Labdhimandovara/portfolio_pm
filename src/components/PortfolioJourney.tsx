@@ -1,7 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 
-export const DevanshuStyleJourney: React.FC = () => {
+export const PortfolioJourney: React.FC = () => {
   const journey = [
     {
       period: "Sep 2026",

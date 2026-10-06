@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-export const DevanshuStyleEasterEgg: React.FC = () => {
+export const PortfolioEasterEgg: React.FC = () => {
   const [bloomed, setBloomed] = useState(false);
 
   const handleBloom = () => {
