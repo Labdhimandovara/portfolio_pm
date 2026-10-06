@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Sparkles, Palette, Compass, Heart, Cake, BookOpen, ExternalLink } from 'lucide-react';
+import { Sparkles, Palette, Compass, Trophy, Code2 } from 'lucide-react';
 
-import userPhoto1 from '../assets/portfolio/user-HOK2bPUo.jpg';
+import labdhiGreenPortrait from '../assets/portfolio/labdhi_portrait_green.jpg';
+import labdhiFormalElevator from '../assets/portfolio/labdhi_formal_elevator.png';
 import profilePhoto from '../assets/portfolio/profile-CQEuO0j2.jpg';
-import realPhoto from '../assets/labdhi_photo.jpg';
+import userPhoto1 from '../assets/portfolio/user-HOK2bPUo.jpg';
 import avatar3D from '../assets/avatar_3d.jpg';
-import cakePhoto from '../assets/portfolio/cake-Khk05ZwI.jpg';
+import hackathonCake from '../assets/portfolio/cake-Khk05ZwI.jpg';
 
 import artwork1 from '../assets/portfolio/artwork1-7kfIIppc.jpg';
 import artwork2 from '../assets/portfolio/artwork2-CdTeIpFE.jpg';
@@ -21,33 +22,33 @@ export const PortfolioAbout: React.FC = () => {
   const photoCards = [
     {
       id: 'photo-1',
-      src: userPhoto1,
-      title: 'Reading & Strategy',
-      subtitle: 'Continuous learning on product & behavioral design'
+      src: labdhiFormalElevator,
+      title: 'Professional & Presentation',
+      subtitle: 'Hackathons & technical defense'
     },
     {
       id: 'photo-2',
-      src: cakePhoto,
-      title: 'Artisan Baking',
-      subtitle: 'Creative precision & confectionery craft'
+      src: userPhoto1,
+      title: 'Reading & Product Thinking',
+      subtitle: 'Exploring user behavior & systems'
     },
     {
       id: 'photo-3',
-      src: profilePhoto,
+      src: labdhiGreenPortrait,
       title: 'Labdhi Mandovara',
       subtitle: 'AI Engineer & Product Builder'
     },
     {
       id: 'photo-4',
-      src: avatar3D,
-      title: '3D AI Persona',
-      subtitle: 'Exploring generative identity & creative tech'
+      src: profilePhoto,
+      title: 'Builder & Innovator',
+      subtitle: 'Symbiosis Institute of Technology, Pune'
     },
     {
       id: 'photo-5',
-      src: realPhoto,
-      title: 'Campus & Hackathons',
-      subtitle: 'Symbiosis Institute of Technology, Pune'
+      src: avatar3D,
+      title: '3D AI Persona',
+      subtitle: 'Agentic AI & intelligent interfaces'
     }
   ];
 
@@ -80,7 +81,7 @@ export const PortfolioAbout: React.FC = () => {
           </h2>
         </div>
 
-        {/* 5-Photo Fan/Arc Carousel (Exact replication of Portfolio reference screenshot) */}
+        {/* 5-Photo Fan/Arc Carousel */}
         <div className="relative max-w-4xl mx-auto py-6 flex items-center justify-center select-none overflow-x-hidden sm:overflow-visible">
           <div className="flex items-center justify-center -space-x-4 sm:-space-x-8 md:-space-x-12">
             {photoCards.map((card, idx) => {
@@ -132,7 +133,7 @@ export const PortfolioAbout: React.FC = () => {
           </div>
         </div>
 
-        {/* Bio Copy directly matching Portfolio reference screenshot */}
+        {/* Bio Copy */}
         <div className="max-w-2xl mx-auto text-center mt-10 space-y-4">
           <h3 className="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
             Hi, I'm Labdhi.
@@ -141,11 +142,11 @@ export const PortfolioAbout: React.FC = () => {
             AI Engineer and Product Builder from India. I design and build experiences that feel effortless, blending intelligent agentic systems and intuitive UX seamlessly into everyday life so it becomes not just functional, but delightful.
           </p>
           <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed font-normal">
-            B.Tech in Electronics & Telecommunication at Symbiosis Institute of Technology, Pune (CGPA 8.4). Nomura KakushIN Finalist. Razorpay Buildathon 2026 builder.
+            B.Tech in Electronics & Telecommunication at Symbiosis Institute of Technology, Pune (CGPA 8.4). Nomura KakushIN Finalist (Team Cortex). Razorpay Buildathon 2026 builder (Raya). LaserHacks 2025 Finalist (Team Emodio).
           </p>
         </div>
 
-        {/* My Super Powers (Matching Portfolio Section) */}
+        {/* My Super Powers */}
         <div className="mt-20">
           <div className="flex items-center justify-center gap-2 mb-8">
             <Sparkles className="w-5 h-5 text-amber-500" />
@@ -168,7 +169,7 @@ export const PortfolioAbout: React.FC = () => {
           </div>
         </div>
 
-        {/* Off-Screen & Creative Life: Artist & Baker (Exact request: 'I M AN ARTIST... ADD THEM') */}
+        {/* Off-Screen: Artist Showcase */}
         <div className="mt-20 p-6 sm:p-10 rounded-3xl bg-[#FAF9F5] border border-neutral-200/90 text-left">
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
@@ -178,16 +179,16 @@ export const PortfolioAbout: React.FC = () => {
                 <span>OFF-SCREEN CREATIVE PURSUITS</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
-                Artist & Creator
+                Artist & Sketching
               </h3>
               <p className="text-xs sm:text-sm text-neutral-600 mt-1">
-                When I step away from code and PRDs, I practice fine art sketching and artisan confectionery. Visual composition in drawing directly informs how I design intuitive product layouts.
+                Beyond code and PRDs, I practice traditional fine-art sketching. Balancing proportions, contrast, and visual hierarchy in hand-drawn portraits directly sharpens how I design clean product experiences.
               </p>
             </div>
 
             <div className="flex items-center gap-2">
               <span className="text-xs font-mono text-neutral-500 bg-white px-3 py-1.5 rounded-full border border-neutral-200">
-                4 Original Sketches • Confectionery
+                4 Original Sketches
               </span>
             </div>
           </div>
@@ -213,14 +214,14 @@ export const PortfolioAbout: React.FC = () => {
             ))}
           </div>
 
-          {/* Baker Spotlight Card */}
+          {/* Team Hackathon Celebration Card */}
           <div className="mt-6 p-4 rounded-2xl bg-white border border-neutral-200/80 flex flex-col sm:flex-row items-center gap-4">
             <div className="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 border border-neutral-200">
-              <img src={cakePhoto} alt="Cake Baking" className="w-full h-full object-cover" />
+              <img src={hackathonCake} alt="Hackathon Celebration" className="w-full h-full object-cover" />
             </div>
             <div className="text-xs text-neutral-600 leading-relaxed text-left">
-              <span className="font-bold text-neutral-900 block mb-0.5">Baking & Culinary Precision</span>
-              Baking is the perfect intersection of chemical precision (exact measurements, temperature curves) and creative artistry (presentation, texture). The same discipline translates into rigorous software engineering!
+              <span className="font-bold text-neutral-900 block mb-0.5">Team Spirit & Hackathon Milestones</span>
+              Celebrating post-demo moments and prototype milestones with the team! Building AI products is as much about shared team momentum and high energy as it is about clean architecture.
             </div>
           </div>
 
