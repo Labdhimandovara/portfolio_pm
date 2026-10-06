@@ -11,7 +11,8 @@ import {
   Zap,
   Building2,
   Mic,
-  Coins
+  Coins,
+  ExternalLink
 } from 'lucide-react';
 import { CaseStudyRaya } from './CaseStudyRaya';
 import { CaseStudyDhanSaarthi } from './CaseStudyDhanSaarthi';
@@ -28,85 +29,85 @@ export const DevanshuStyleWorks: React.FC = () => {
     {
       id: 'raya',
       title: 'Raya by Razorpay',
-      company: 'Razorpay Buildathon 2026',
-      badge: 'BUILDATHON WINNER TRACK',
+      brand: 'Razorpay Buildathon 2026',
+      projectCount: 'Agentic Commerce',
       year: '2026',
       role: 'Product Architect & AI Engineer',
-      skills: 'Agentic Commerce, MCP Protocol, 6-Gate Policy Engine, PostgreSQL',
-      scale: '3 Connected Merchants • 6-Gate Payment Policy Engine • 12M+ Razorpay Merchant Scale',
-      summary: 'An MCP-powered agentic commerce platform allowing autonomous AI agents to discover products across multiple merchants, compare options, assemble shopping carts, and execute safe checkout.',
+      skills: 'Agentic AI, MCP Protocol, 6-Gate Policy Engine, PostgreSQL',
+      scaleHighlight: '3 Connected Merchants • 6-Gate Payment Policy Engine • 12M+ Razorpay Scale',
+      description: 'An MCP-powered agentic commerce platform designed to let AI agents discover products across multiple storefronts, compare options, assemble shopping carts, and complete secure checkout through a 6-gate payment policy engine.',
       accent: '#2D5BFF'
     },
     {
       id: 'dhan',
       title: 'Dhan Saarthi (Cortex)',
-      company: 'Nomura KakushIN 10.0',
-      badge: 'FINALIST / 1,000+ TEAMS',
+      brand: 'Nomura KakushIN 10.0',
+      projectCount: '10+ Modules • 50+ Screens',
       year: '2026',
       role: 'Lead Product Designer & System Architect',
-      skills: 'Financial Inclusion, 50+ UI Screens, 10+ Modules, Voice-First UX, 3-Tier Architecture',
-      scale: '10+ Modules • 50+ Screens • 24/7 Vernacular Guidance • Selected from 1,000+ Teams',
-      summary: 'A multimodal financial life companion designed for underbanked citizens, combining voice-first dialect access, consent-driven onboarding, and an intelligent household Financial Twin.',
+      skills: 'Financial Inclusion, Voice-First UX, Financial Twin, 3-Layer Fintech Architecture',
+      scaleHighlight: 'Selected as Finalist from 1,000+ Teams • 24/7 Vernacular Guidance',
+      description: 'An AI-powered financial inclusion ecosystem architected as a 3-layer fintech platform, uniting voice-first multilingual accessibility, consent-driven onboarding, and an intelligent household Financial Twin.',
       accent: '#E07A5F'
     },
     {
       id: 'math',
       title: 'MathEngineer',
-      company: 'EdTech Systems Innovation',
-      badge: '664 AUTOMATED TESTS',
+      brand: 'EdTech Systems Innovation',
+      projectCount: '7 Modules • 20 Practice Bank',
       year: '2026',
       role: 'Full-Stack Product Builder',
-      skills: 'Deterministic Computing, Numerical Methods, RAG & OCR, Gemini Socratic Fallback',
-      scale: '664 Unit Tests • 3 Numerical Methods • 7 Learning Modules • 20 Practice Bank',
-      summary: 'A deterministic-first engineering mathematics solver turning step-by-step pedagogy into an interactive product with OCR handwritten equation parsing and textbook RAG.',
+      skills: 'Deterministic Solvers, 664 Unit Tests, RAG, Multimodal OCR, Gemini Socratic Fallback',
+      scaleHighlight: '664 Automated Tests Passing • 3 Verified Numerical Methods',
+      description: 'A deterministic-first engineering mathematics solver turning step-by-step learning into an interactive product with OCR handwritten equation parsing, textbook RAG, and graduated Socratic hints.',
       accent: '#3D5A50'
     },
     {
       id: 'fraud',
       title: 'Citizen Fraud Shield',
-      company: 'Public AI Safety & Trust',
-      badge: '3 ML FRAUD MODELS',
+      brand: 'Public AI Safety & Trust',
+      projectCount: '3 ML Models • FastAPI',
       year: '2026',
-      role: 'Product Lead & ML Systems Engineer',
-      skills: 'FastAPI Async, Deepfake Audio Detection, Transaction Phishing NLP, Gemini Chatbot',
-      scale: '3 Specialized Scenarios (Voice, SMS, Currency) • Sub-3s Latency • Plain-English Directives',
-      summary: 'A citizen-focused scam prevention hub replacing high-stress ambiguity with rapid machine learning verification for voice extortion, fake UPI payment alerts, and currency notes.',
+      role: 'Product Lead & ML Engineer',
+      skills: 'FastAPI Backend, Deepfake Audio Detection, Phishing NLP, Streamlit & Gemini',
+      scaleHighlight: '3 Verified Scenarios (Voice, SMS, Banknote) • Sub-3s Latency',
+      description: 'A public-facing scam prevention product combining 3 specialized ML detection models, an intuitive Streamlit verification dashboard, and an empathetic Gemini safety assistant for high-stress scam defense.',
       accent: '#8338EC'
     },
     {
       id: 'voice',
       title: 'Voice as a Product Interface',
-      company: 'Edysor AI & Research',
-      badge: '100-TURN BENCHMARK',
+      brand: 'Edysor AI & Latency Research',
+      projectCount: '100 Automated Turns',
       year: '2026',
       role: 'AI Prompt Engineer Intern & Voice Researcher',
-      skills: 'Agora WebRTC vs Pipecat, Streaming STT-LLM-TTS, 3 Language Modes, Deepgram/Cartesia',
-      scale: '100 Automated Turns • P50/P90/P95 Profiling • Hindi, Telugu & Mixed Vernacular Modes',
-      summary: 'Quantitative benchmarking of real-time streaming voice architectures for conversational sub-second human cadence, paired with a functional 3-language VoiceBot.',
+      skills: 'Agora WebRTC vs Pipecat, Streaming STT-LLM-TTS, Deepgram, Groq LPU, Cartesia, 3 Language Modes',
+      scaleHighlight: 'P50, P90, P95 Latency Profiling • Sub-500ms Human Cadence Focus',
+      description: 'Quantitative benchmarking of real-time streaming voice architectures comparing Agora and Pipecat across streaming STT, LLM inference, and TTS pipelines, paired with a functional 3-language VoiceBot.',
       accent: '#F77F00'
     },
     {
       id: 'riya',
       title: 'Riya — Multi-Agent Real Estate Assistant',
-      company: 'Autonomous Agentic Systems',
-      badge: '6 CREWAI AGENTS',
+      brand: 'Autonomous Systems & CRM',
+      projectCount: '6 CrewAI Agents',
       year: '2026',
       role: 'AI Product Builder',
-      skills: 'CrewAI Choreography, PDF Brochure RAG, Google Sheets CRM API, Indian City Real Estate',
-      scale: '6 Autonomous Agents • 6+ Major Indian Cities • Automated CRM Pipeline',
-      summary: 'Orchestrating 6 specialized autonomous agents to conduct property discovery, legal PDF prospectus retrieval, valuation checks, and seamless CRM synchronization.',
+      skills: 'CrewAI Orchestration, PDF Brochure RAG, Google Sheets CRM API, Indian City Real Estate',
+      scaleHighlight: '6 Autonomous Agents • 6+ Major Indian Cities • Automated CRM Synchronization',
+      description: 'Orchestrating 6 specialized autonomous CrewAI agents to conduct property discovery, legal PDF prospectus retrieval, valuation checks, and seamless CRM synchronization.',
       accent: '#028090'
     },
     {
       id: 'systems',
-      title: '5G ADAS & Acoustic ML',
-      company: 'Connected Systems & Deep Learning',
-      badge: '98% CRASH ACCURACY',
+      title: '5G ADAS & Acoustic Deep Learning',
+      brand: 'Connected Systems & Automotive ML',
+      projectCount: '2 Core ML Implementations',
       year: '2025 - 2026',
       role: 'Signal Processing & ML Engineer',
       skills: '5G Internet of Vehicles (IoV), Trajectory Prediction, LSTM, MFCC Audio Features',
-      scale: '98% Accident Prediction Accuracy • 15,000+ Speech Audio Clips (RAVDESS/CREMA-D)',
-      summary: 'Foundational systems engineering combining real-time 5G telematics collision trajectory forecasting with an LSTM neural network classifying 5 vocal emotional states.',
+      scaleHighlight: '98% Accident Prediction Accuracy • 15,000+ Speech Audio Clips (RAVDESS/CREMA-D)',
+      description: 'Safety-critical systems engineering combining real-time 5G telematics collision trajectory forecasting with an LSTM neural network classifying 5 vocal emotional states.',
       accent: '#10B981'
     }
   ];
@@ -115,20 +116,20 @@ export const DevanshuStyleWorks: React.FC = () => {
     <section id="works" className="py-24 px-4 sm:px-8 bg-white border-t border-neutral-200/80">
       <div className="max-w-6xl mx-auto">
         
-        {/* Section Header matching Devanshu's editorial style */}
-        <div className="max-w-2xl mb-14 text-left">
+        {/* Section Header matching Devanshu's exact layout */}
+        <div className="max-w-3xl mb-14 text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-neutral-800 text-xs font-mono font-bold mb-3">
-            <span>SELECTED CASE STUDIES</span>
+            <span>SELECTED WORK</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-950">
             My Works
           </h2>
           <p className="text-neutral-600 mt-3 text-base sm:text-lg">
-            Showcasing a diverse range of scalable AI solutions, agentic commerce platforms, and user experiences across multiple domains.
+            Showcasing a diverse range of scalable design solutions, agentic commerce platforms, and user experiences across multiple domains.
           </p>
         </div>
 
-        {/* Project Editorial Cards Stack */}
+        {/* Project Editorial Cards (matching Devanshu Chauhan card typography & metadata layout) */}
         <div className="space-y-6">
           {projects.map((proj, idx) => {
             const isExpanded = expandedProject === proj.id;
@@ -137,53 +138,82 @@ export const DevanshuStyleWorks: React.FC = () => {
                 key={proj.id}
                 className="rounded-3xl border border-neutral-200/90 bg-[#FBFBF9] hover:border-neutral-300 transition-all overflow-hidden shadow-xs"
               >
-                {/* Project Header Banner / Clickable Strip */}
+                {/* Project Header Box matching Devanshu's exact metadata fields */}
                 <div
                   onClick={() => setExpandedProject(isExpanded ? null : proj.id)}
-                  className="p-6 sm:p-8 cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-6 bg-white hover:bg-neutral-50/70 transition-colors"
+                  className="p-6 sm:p-8 cursor-pointer flex flex-col lg:flex-row lg:items-start justify-between gap-6 bg-white hover:bg-neutral-50/70 transition-colors"
                 >
-                  <div className="space-y-2">
-                    <div className="flex flex-wrap items-center gap-2.5">
-                      <span className="text-sm font-mono font-bold text-neutral-400">
+                  <div className="space-y-3 max-w-2xl">
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl sm:text-3xl font-extrabold font-mono text-neutral-950">
                         0{idx + 1}
                       </span>
-                      <span className="text-xs font-mono font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
-                        {proj.company}
+                      <h3 className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight">
+                        {proj.title}
+                      </h3>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                      {proj.description}
+                    </p>
+
+                    {/* Scale Highlight Pill */}
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-mono font-semibold">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+                      <span>{proj.scaleHighlight}</span>
+                    </div>
+                  </div>
+
+                  {/* Devanshu's 4-Box Metadata Grid (Brand, Projects, Year, Role, Skills) */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 text-left lg:w-72 shrink-0 pt-4 lg:pt-0 border-t lg:border-t-0 border-neutral-100">
+                    <div className="p-2.5 rounded-xl bg-[#FBFBF9] border border-neutral-200/80">
+                      <span className="text-[10px] font-mono uppercase text-neutral-400 font-bold block">
+                        BRAND / CHALLENGE
                       </span>
-                      <span className="text-xs font-mono text-neutral-400">
-                        {proj.year}
-                      </span>
-                      <span className="text-xs font-mono font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
-                        {proj.badge}
+                      <span className="text-xs font-bold text-neutral-900 block truncate">
+                        {proj.brand}
                       </span>
                     </div>
 
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight">
-                      {proj.title}
-                    </h3>
-
-                    <p className="text-xs sm:text-sm text-neutral-600 max-w-2xl leading-relaxed">
-                      {proj.summary}
-                    </p>
-                  </div>
-
-                  {/* Right metadata & expand trigger */}
-                  <div className="flex items-center justify-between md:justify-end gap-6 shrink-0 pt-4 md:pt-0 border-t md:border-t-0 border-neutral-100">
-                    <div className="text-left md:text-right space-y-1">
+                    <div className="p-2.5 rounded-xl bg-[#FBFBF9] border border-neutral-200/80">
                       <span className="text-[10px] font-mono uppercase text-neutral-400 font-bold block">
-                        MY ROLE
+                        YEAR
+                      </span>
+                      <span className="text-xs font-bold text-neutral-900 block">
+                        {proj.year}
+                      </span>
+                    </div>
+
+                    <div className="p-2.5 rounded-xl bg-[#FBFBF9] border border-neutral-200/80 sm:col-span-2 lg:col-span-2">
+                      <span className="text-[10px] font-mono uppercase text-neutral-400 font-bold block">
+                        ROLE
                       </span>
                       <span className="text-xs font-bold text-neutral-900 block">
                         {proj.role}
                       </span>
-                      <span className="text-[11px] text-neutral-500 font-mono block">
-                        {proj.scale}
-                      </span>
                     </div>
 
-                    <div className={`w-9 h-9 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 transition-transform duration-300 ${isExpanded ? 'rotate-180 bg-neutral-900 text-white' : ''}`}>
-                      <ChevronDown className="w-4 h-4" />
+                    <div className="p-2.5 rounded-xl bg-[#FBFBF9] border border-neutral-200/80 sm:col-span-2 lg:col-span-2">
+                      <span className="text-[10px] font-mono uppercase text-neutral-400 font-bold block">
+                        SKILLS
+                      </span>
+                      <span className="text-[11px] font-medium text-neutral-700 block truncate">
+                        {proj.skills}
+                      </span>
                     </div>
+                  </div>
+                </div>
+
+                {/* Bottom Toggle Bar */}
+                <div 
+                  onClick={() => setExpandedProject(isExpanded ? null : proj.id)}
+                  className="px-6 py-3 bg-[#FBFBF9] border-t border-neutral-200/80 flex items-center justify-between text-xs cursor-pointer hover:bg-neutral-100 transition-colors"
+                >
+                  <span className="font-mono font-semibold text-blue-700">
+                    {isExpanded ? 'Hide In-Depth Case Study' : 'View Full In-Depth Case Study & Architecture →'}
+                  </span>
+                  <div className={`w-6 h-6 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-neutral-600 transition-transform duration-300 ${isExpanded ? 'rotate-180 bg-neutral-900 text-white' : ''}`}>
+                    <ChevronDown className="w-3.5 h-3.5" />
                   </div>
                 </div>
 

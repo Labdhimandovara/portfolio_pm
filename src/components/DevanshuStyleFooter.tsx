@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUp, ArrowUpRight, Copy, Check, Mail, Sparkles } from 'lucide-react';
+import { ArrowUp, ArrowUpRight, Copy, Check, Mail, Monitor } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 const LinkedInIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -34,9 +34,6 @@ export const DevanshuStyleFooter: React.FC = () => {
         {/* Top Callout */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-neutral-400 block mb-2">
-              CONTACT & INQUIRIES
-            </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-neutral-950 tracking-tight">
               Let's Connect :
             </h2>
@@ -58,26 +55,34 @@ export const DevanshuStyleFooter: React.FC = () => {
               href={PERSONAL_INFO.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white hover:bg-neutral-100 border border-neutral-300 text-blue-600 shadow-2xs transition-all"
-              aria-label="LinkedIn"
+              className="p-3 rounded-full bg-white hover:bg-neutral-100 border border-neutral-300 text-blue-600 shadow-2xs transition-all flex items-center gap-1.5 text-xs font-semibold"
             >
               <LinkedInIcon className="w-4 h-4" />
+              <span>LinkedIn</span>
             </a>
 
             <a
               href={PERSONAL_INFO.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white hover:bg-neutral-100 border border-neutral-300 text-neutral-900 shadow-2xs transition-all"
-              aria-label="GitHub"
+              className="p-3 rounded-full bg-white hover:bg-neutral-100 border border-neutral-300 text-neutral-900 shadow-2xs transition-all flex items-center gap-1.5 text-xs font-semibold"
             >
               <GitHubIcon className="w-4 h-4" />
+              <span>GitHub</span>
             </a>
           </div>
         </div>
 
+        {/* Desktop Experience Banner matching Devanshu's exact footer callout */}
+        <div className="p-4 rounded-2xl bg-neutral-100/70 border border-neutral-200/70 flex items-center gap-3 text-xs text-neutral-600">
+          <Monitor className="w-4 h-4 text-neutral-400 shrink-0" />
+          <span>
+            This portfolio features in-depth case studies, system architectures, and interactive flows that are best experienced on a larger screen. For the optimal viewing experience, please open this link on your desktop or laptop.
+          </span>
+        </div>
+
         {/* Bottom Bar matching Devanshu's footer layout */}
-        <div className="pt-8 border-t border-neutral-200/70 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+        <div className="pt-6 border-t border-neutral-200/70 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <div className="flex items-center gap-2">
             <span className="font-bold text-neutral-900">{PERSONAL_INFO.name}</span>
             <span>•</span>
