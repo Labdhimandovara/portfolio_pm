@@ -34,6 +34,7 @@ export const PortfolioHero: React.FC<HeroProps> = ({ onOpenContact }) => {
       x: '38%',
       y: '18%',
       details: [
+        'The Silent Patient — Alex Michaelides',
         'Zero to One — Peter Thiel',
         'The Design of Everyday Things — Don Norman',
         'Designing Data-Intensive Applications — Martin Kleppmann',
@@ -101,17 +102,17 @@ export const PortfolioHero: React.FC<HeroProps> = ({ onOpenContact }) => {
     {
       id: 'boardgames',
       label: 'Board Games',
-      category: 'Tabletop Strategy',
+      category: 'Tabletop Strategy & Puzzles',
       icon: <Gamepad2 className="w-3.5 h-3.5 text-orange-500" />,
-      title: 'Favorite Board Games',
-      description: 'Board games teach resource allocation, asymmetric trades, and strategic negotiation.',
+      title: 'Favorite Board Games & Puzzles',
+      description: 'Strategic planning, resource optimization, and spatial algorithmic logic.',
       x: '65%',
       y: '34%',
       details: [
-        'Catan (Resource Management & Trade)',
-        'Ticket to Ride (Network Routing)',
-        'Carcassonne (Tile Strategy)',
-        'Exploding Kittens'
+        'Chess (Tactical Strategy & Foresight)',
+        'Splendor (Resource Engine Building)',
+        'Monopoly (Negotiation & Trade)',
+        'Rubik\'s Cube (Spatial & Algorithmic Solving)'
       ]
     },
     {

@@ -10,7 +10,6 @@ import labdhiFormalElevator from '../assets/portfolio/labdhi_formal_elevator.png
 import userPhoto1 from '../assets/portfolio/user-HOK2bPUo.jpg';
 import profilePhoto from '../assets/portfolio/profile-CQEuO0j2.jpg';
 import avatar3D from '../assets/avatar_3d.jpg';
-import hackathonCake from '../assets/portfolio/cake-Khk05ZwI.jpg';
 
 import artwork1 from '../assets/portfolio/artwork1-7kfIIppc.jpg';
 import artwork2 from '../assets/portfolio/artwork2-CdTeIpFE.jpg';
@@ -245,17 +244,6 @@ export const PortfolioAbout: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Team Hackathon Celebration Card */}
-          <div className="mt-6 p-4 rounded-2xl bg-white border border-neutral-200/80 flex flex-col sm:flex-row items-center gap-4">
-            <div className="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 border border-neutral-200">
-              <img src={hackathonCake} alt="Hackathon Celebration" className="w-full h-full object-cover" />
-            </div>
-            <div className="text-xs text-neutral-600 leading-relaxed text-left">
-              <span className="font-bold text-neutral-900 block mb-0.5">Team Spirit & Hackathon Milestones</span>
-              Celebrating post-demo moments and prototype milestones with the team! Building AI products is as much about shared team momentum and high energy as it is about clean architecture.
-            </div>
           </div>
 
         </div>
