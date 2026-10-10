@@ -42,8 +42,8 @@ export const PortfolioAppreciations: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-xl mx-auto">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-neutral-200 shadow-2xs text-xs font-mono font-bold text-neutral-800 mb-3">
-            <Trophy className="w-3.5 h-3.5 text-amber-500" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-rose-50/90 via-amber-50/90 to-sky-50/90 border border-neutral-200/90 shadow-2xs text-xs font-mono font-bold text-neutral-800 mb-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-pink-500 via-amber-400 to-sky-400" />
             <span>HONORS & CERTIFICATIONS</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900">

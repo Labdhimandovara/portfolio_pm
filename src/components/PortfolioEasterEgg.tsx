@@ -19,10 +19,13 @@ export const PortfolioEasterEgg: React.FC = () => {
       <div className="max-w-3xl mx-auto">
         <div 
           onClick={handleBloom}
-          className="p-8 sm:p-12 rounded-[2.5rem] bg-[#FBFBF9] border border-neutral-200/90 shadow-2xs hover:shadow-md transition-all cursor-pointer text-center space-y-4 group"
+          className="relative p-8 sm:p-12 rounded-[2.5rem] bg-gradient-to-br from-[#FFF5F7] via-[#FFFDF0] via-[#F0FDF4] to-[#F0F9FF] border border-rose-200/60 shadow-xs hover:shadow-[0_12px_40px_-10px_rgba(244,114,182,0.2),0_12px_40px_-10px_rgba(56,189,248,0.2)] transition-all cursor-pointer text-center space-y-4 group overflow-hidden"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-mono font-bold">
-            <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+          {/* Subtle Watercolor Top Bar */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#F472B6] via-[#FBBF24] via-[#34D399] to-[#38BDF8]" />
+
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/90 border border-neutral-200/90 text-neutral-800 text-xs font-mono font-bold shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 via-amber-400 to-sky-400" />
             <span>INTERACTIVE EASTER EGG</span>
           </div>
 
@@ -31,7 +34,7 @@ export const PortfolioEasterEgg: React.FC = () => {
           </h3>
 
           <div className="py-4 flex justify-center">
-            <div className={`w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-inner border border-neutral-200/80 transition-all duration-500 ${bloomed ? 'scale-125 bg-amber-100 rotate-12 shadow-amber-200' : 'bg-white group-hover:scale-110'}`}>
+            <div className={`w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-inner border border-neutral-200/80 transition-all duration-500 ${bloomed ? 'scale-125 bg-gradient-to-tr from-pink-100 via-amber-100 to-sky-100 rotate-12 shadow-pink-200/50' : 'bg-white group-hover:scale-110'}`}>
               {bloomed ? '🪷' : '🌸'}
             </div>
           </div>

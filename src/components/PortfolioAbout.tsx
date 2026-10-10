@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Sparkles, Palette, Compass, Trophy, Code2, ZoomIn } from 'lucide-react';
+import { Sparkles, Palette, Compass, Trophy, Code2, ZoomIn, Bot, Mic, ShieldCheck, Layers, Users } from 'lucide-react';
 
 import labdhiFormalBlazer from '../assets/portfolio/labdhi_formal_blazer.png';
 import labdhiArtistPainting from '../assets/portfolio/labdhi_artist_painting.png';
@@ -54,14 +54,86 @@ export const PortfolioAbout: React.FC = () => {
   ];
 
   const superPowers = [
-    { title: "Product Thinking & PRDs", desc: "Turning ambiguous problems into clear feature scopes, user journeys, and specifications." },
-    { title: "AI & Agentic Systems", desc: "Building practical AI tools, agent workflows (MCP), and safe checkout guardrails." },
-    { title: "Real-Time Voice AI", desc: "Testing low-latency streaming pipelines so voice interactions feel natural and responsive." },
-    { title: "Reliable Logic + AI", desc: "Combining deterministic formulas with LLMs so outputs stay accurate and grounded." },
-    { title: "UI/UX Prototyping", desc: "Designing simple, accessible interfaces that non-technical users can navigate without friction." },
-    { title: "Testing & Code Reliability", desc: "Writing comprehensive automated test suites so products don't fail when people need them." },
-    { title: "Multi-Agent Automation", desc: "Orchestrating multi-agent tasks (CrewAI) for search, document analysis, and CRM sync." },
-    { title: "Team Leadership", desc: "Leading student publications, hackathon teams, and cross-functional projects to delivery." },
+    { 
+      title: "Product Thinking & PRDs", 
+      desc: "Turning ambiguous problems into clear feature scopes, user journeys, and specifications.",
+      icon: <Compass className="w-4 h-4 text-rose-600" />,
+      border: "border-rose-200/80 hover:border-rose-300",
+      bg: "bg-rose-50/30 hover:bg-rose-50/70",
+      topGradient: "from-rose-400 to-pink-500",
+      iconBg: "bg-rose-100/90 text-rose-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(244,63,94,0.15)]"
+    },
+    { 
+      title: "AI & Agentic Systems", 
+      desc: "Building practical AI tools, agent workflows (MCP), and safe checkout guardrails.",
+      icon: <Bot className="w-4 h-4 text-purple-600" />,
+      border: "border-purple-200/80 hover:border-purple-300",
+      bg: "bg-purple-50/30 hover:bg-purple-50/70",
+      topGradient: "from-purple-400 to-indigo-500",
+      iconBg: "bg-purple-100/90 text-purple-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(168,85,247,0.15)]"
+    },
+    { 
+      title: "Real-Time Voice AI", 
+      desc: "Testing low-latency streaming pipelines so voice interactions feel natural and responsive.",
+      icon: <Mic className="w-4 h-4 text-amber-600" />,
+      border: "border-amber-200/80 hover:border-amber-300",
+      bg: "bg-amber-50/30 hover:bg-amber-50/70",
+      topGradient: "from-amber-400 to-orange-500",
+      iconBg: "bg-amber-100/90 text-amber-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(245,158,11,0.15)]"
+    },
+    { 
+      title: "Reliable Logic + AI", 
+      desc: "Combining deterministic formulas with LLMs so outputs stay accurate and grounded.",
+      icon: <Code2 className="w-4 h-4 text-sky-600" />,
+      border: "border-sky-200/80 hover:border-sky-300",
+      bg: "bg-sky-50/30 hover:bg-sky-50/70",
+      topGradient: "from-sky-400 to-blue-500",
+      iconBg: "bg-sky-100/90 text-sky-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(14,165,233,0.15)]"
+    },
+    { 
+      title: "UI/UX Prototyping", 
+      desc: "Designing simple, accessible interfaces that non-technical users can navigate without friction.",
+      icon: <Palette className="w-4 h-4 text-pink-600" />,
+      border: "border-pink-200/80 hover:border-pink-300",
+      bg: "bg-pink-50/30 hover:bg-pink-50/70",
+      topGradient: "from-pink-400 to-rose-500",
+      iconBg: "bg-pink-100/90 text-pink-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(236,72,153,0.15)]"
+    },
+    { 
+      title: "Testing & Code Reliability", 
+      desc: "Writing comprehensive automated test suites so products don't fail when people need them.",
+      icon: <ShieldCheck className="w-4 h-4 text-emerald-600" />,
+      border: "border-emerald-200/80 hover:border-emerald-300",
+      bg: "bg-emerald-50/30 hover:bg-emerald-50/70",
+      topGradient: "from-emerald-400 to-teal-500",
+      iconBg: "bg-emerald-100/90 text-emerald-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(16,185,129,0.15)]"
+    },
+    { 
+      title: "Multi-Agent Automation", 
+      desc: "Orchestrating multi-agent tasks (CrewAI) for search, document analysis, and CRM sync.",
+      icon: <Layers className="w-4 h-4 text-teal-600" />,
+      border: "border-teal-200/80 hover:border-teal-300",
+      bg: "bg-teal-50/30 hover:bg-teal-50/70",
+      topGradient: "from-teal-400 to-cyan-500",
+      iconBg: "bg-teal-100/90 text-teal-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(20,184,166,0.15)]"
+    },
+    { 
+      title: "Team Leadership", 
+      desc: "Leading student publications, hackathon teams, and cross-functional projects to delivery.",
+      icon: <Users className="w-4 h-4 text-orange-600" />,
+      border: "border-orange-200/80 hover:border-orange-300",
+      bg: "bg-orange-50/30 hover:bg-orange-50/70",
+      topGradient: "from-orange-400 to-amber-500",
+      iconBg: "bg-orange-100/90 text-orange-600",
+      shadow: "hover:shadow-[0_8px_25px_-5px_rgba(249,115,22,0.15)]"
+    },
   ];
 
   const artworks = [
@@ -84,7 +156,9 @@ export const PortfolioAbout: React.FC = () => {
 
         {/* 5-Photo Fan/Arc Carousel */}
         <div className="relative max-w-4xl mx-auto py-6 flex items-center justify-center select-none overflow-x-hidden sm:overflow-visible">
-          <div className="flex items-center justify-center -space-x-4 sm:-space-x-8 md:-space-x-12">
+          {/* Ambient Watercolor Wash behind Photo Arc */}
+          <div className="absolute inset-0 max-w-2xl mx-auto bg-gradient-to-r from-rose-200/35 via-amber-100/30 via-emerald-100/25 to-sky-200/35 blur-3xl pointer-events-none rounded-full" />
+          <div className="flex items-center justify-center -space-x-4 sm:-space-x-8 md:-space-x-12 relative z-10">
             {photoCards.map((card, idx) => {
               const isCenter = idx === 2;
               const isLeft1 = idx === 1;
@@ -146,7 +220,9 @@ export const PortfolioAbout: React.FC = () => {
         {/* My Super Powers */}
         <div className="mt-20">
           <div className="flex items-center justify-center gap-2 mb-8">
-            <Sparkles className="w-5 h-5 text-amber-500" />
+            <span className="p-1.5 rounded-full bg-gradient-to-r from-pink-100 via-amber-100 to-sky-100 border border-neutral-200/90 shadow-2xs">
+              <Sparkles className="w-4 h-4 text-pink-500" />
+            </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight">
               My Super Powers
             </h3>
@@ -156,11 +232,26 @@ export const PortfolioAbout: React.FC = () => {
             {superPowers.map((power, idx) => (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-[#FBFBF9] border border-neutral-200/80 shadow-2xs hover:border-blue-400 hover:bg-white hover:shadow-xs transition-all text-left"
+                className={`group relative p-5 rounded-2xl ${power.bg} ${power.border} ${power.shadow} border transition-all duration-300 text-left overflow-hidden`}
               >
-                <div className="w-2 h-2 rounded-full bg-blue-600 mb-3" />
-                <h4 className="text-sm font-bold text-neutral-900">{power.title}</h4>
-                <p className="text-xs text-neutral-500 mt-1.5 leading-relaxed">{power.desc}</p>
+                {/* Top Watercolor Gradient Accent */}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${power.topGradient}`} />
+                
+                <div className="flex items-center justify-between mb-3.5">
+                  <div className={`p-2 rounded-xl ${power.iconBg} transition-transform group-hover:scale-110 duration-200 shadow-2xs`}>
+                    {power.icon}
+                  </div>
+                  <span className="text-[10px] font-mono font-bold text-neutral-400 group-hover:text-neutral-700 transition-colors">
+                    0{idx + 1}
+                  </span>
+                </div>
+                
+                <h4 className="text-sm font-bold text-neutral-900 group-hover:text-neutral-950 transition-colors">
+                  {power.title}
+                </h4>
+                <p className="text-xs text-neutral-600 mt-1.5 leading-relaxed">
+                  {power.desc}
+                </p>
               </div>
             ))}
           </div>

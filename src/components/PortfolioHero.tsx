@@ -160,14 +160,16 @@ export const PortfolioHero: React.FC<HeroProps> = ({ onOpenContact }) => {
           </p>
 
           {/* Micro Interactive Tag */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-neutral-200/90 shadow-2xs text-[11px] text-neutral-500 font-mono mt-1">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-gradient-to-r from-rose-50/80 via-amber-50/80 via-emerald-50/80 to-sky-50/80 border border-neutral-200/90 shadow-2xs text-[11px] text-neutral-600 font-mono mt-1">
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 via-amber-400 to-sky-400 animate-pulse" />
             <span>Click or hover items on the shelf & desk to explore</span>
           </div>
         </div>
 
         {/* 3D Workspace Scene Centerpiece */}
-        <div className="relative mx-auto max-w-4xl rounded-3xl overflow-hidden border border-neutral-200/90 bg-white shadow-xl group">
+        <div className="relative mx-auto max-w-4xl rounded-3xl overflow-hidden border border-neutral-200/90 bg-white shadow-xl hover:shadow-[0_12px_40px_-10px_rgba(244,114,182,0.15),0_12px_40px_-10px_rgba(56,189,248,0.15)] transition-all duration-500 group">
+          {/* Subtle Watercolor Top Gradient Bar */}
+          <div className="h-1 w-full bg-gradient-to-r from-[#F472B6]/90 via-[#FBBF24]/90 via-[#34D399]/90 to-[#38BDF8]/90" />
           
           {/* Image of the 3D clay desk setup */}
           <div className="relative w-full aspect-[16/9] sm:aspect-[16/9] select-none overflow-hidden bg-[#FAF9F5]">

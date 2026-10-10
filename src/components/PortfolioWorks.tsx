@@ -130,8 +130,9 @@ export const PortfolioWorks: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header matching Portfolio's exact layout */}
-        <div className="max-w-3xl mb-14 text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-neutral-800 text-xs font-mono font-bold mb-3">
+        <div className="max-w-3xl mb-14 text-left relative">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-rose-50/90 via-amber-50/90 via-emerald-50/90 to-sky-50/90 border border-neutral-200 text-neutral-800 text-xs font-mono font-bold mb-3 shadow-2xs">
+            <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-pink-500 via-amber-500 to-sky-500" />
             <span>SELECTED WORK</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-950">
@@ -149,19 +150,22 @@ export const PortfolioWorks: React.FC = () => {
             return (
               <div
                 key={proj.id}
-                className="rounded-3xl border border-neutral-200/90 bg-[#FBFBF9] hover:border-neutral-300 transition-all overflow-hidden shadow-xs"
+                className="group rounded-3xl border border-neutral-200/90 bg-[#FBFBF9] hover:border-neutral-300 transition-all duration-300 overflow-hidden shadow-xs hover:shadow-[0_12px_35px_-10px_rgba(244,114,182,0.18),0_12px_35px_-10px_rgba(56,189,248,0.18)]"
               >
+                {/* Subtle Watercolor Top Gradient Bar */}
+                <div className="h-1 w-full bg-gradient-to-r from-[#F472B6]/90 via-[#FBBF24]/90 via-[#34D399]/90 to-[#38BDF8]/90" />
+
                 {/* Project Header Box matching Portfolio's exact metadata fields */}
                 <div
                   onClick={() => setExpandedProject(isExpanded ? null : proj.id)}
-                  className="p-6 sm:p-8 cursor-pointer flex flex-col lg:flex-row lg:items-start justify-between gap-6 bg-white hover:bg-neutral-50/70 transition-colors"
+                  className="p-6 sm:p-8 cursor-pointer flex flex-col lg:flex-row lg:items-start justify-between gap-6 bg-white hover:bg-neutral-50/60 transition-colors"
                 >
                   <div className="space-y-3 max-w-2xl">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl sm:text-3xl font-extrabold font-mono text-neutral-950">
+                      <span className="text-2xl sm:text-3xl font-extrabold font-mono bg-gradient-to-r from-[#E11D48] via-[#D97706] to-[#0284C7] bg-clip-text text-transparent">
                         0{idx + 1}
                       </span>
-                      <h3 className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight">
+                      <h3 className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight group-hover:text-neutral-900 transition-colors">
                         {proj.title}
                       </h3>
                     </div>
@@ -214,12 +218,13 @@ export const PortfolioWorks: React.FC = () => {
                 {/* Bottom Toggle Bar */}
                 <div 
                   onClick={() => setExpandedProject(isExpanded ? null : proj.id)}
-                  className="px-6 py-3 bg-[#FBFBF9] border-t border-neutral-200/80 flex items-center justify-between text-xs cursor-pointer hover:bg-neutral-100 transition-colors"
+                  className="px-6 py-3.5 bg-[#FBFBF9] border-t border-neutral-200/80 flex items-center justify-between text-xs cursor-pointer hover:bg-neutral-100 transition-colors"
                 >
-                  <span className="font-mono font-semibold text-blue-700">
-                    {isExpanded ? 'Hide In-Depth Case Study' : 'View Full In-Depth Case Study & Architecture →'}
+                  <span className="font-mono font-semibold text-neutral-800 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-pink-500 via-amber-400 to-sky-400" />
+                    <span>{isExpanded ? 'Hide Details' : 'Detailed Approach →'}</span>
                   </span>
-                  <div className={`w-6 h-6 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-neutral-600 transition-transform duration-300 ${isExpanded ? 'rotate-180 bg-neutral-900 text-white' : ''}`}>
+                  <div className={`w-6 h-6 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-neutral-600 transition-transform duration-300 ${isExpanded ? 'rotate-180 bg-neutral-900 text-white border-neutral-900' : ''}`}>
                     <ChevronDown className="w-3.5 h-3.5" />
                   </div>
                 </div>
