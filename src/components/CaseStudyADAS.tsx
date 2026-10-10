@@ -32,7 +32,7 @@ export const CaseStudyADAS: React.FC = () => {
           5G ADAS & IoV Collision Prevention
         </h3>
         <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
-          A safety-critical Advanced Driver Assistance System (ADAS) leveraging real-time computer vision object detection and 5G telematics to predict multi-vehicle collision trajectories in dense Indian traffic conditions.
+          An Advanced Driver Assistance System (ADAS) built for real-world driving conditions in India. Combining real-time computer vision object detection and 5G vehicle-to-everything communication to warn drivers of collision risks early.
         </p>
       </div>
 
@@ -55,9 +55,9 @@ export const CaseStudyADAS: React.FC = () => {
             className="w-full h-full object-contain"
           />
           <div className="absolute bottom-4 left-4 right-4 sm:left-6 sm:bottom-6 sm:right-auto max-w-md p-3.5 rounded-2xl bg-black/80 backdrop-blur-md border border-white/10 text-white text-xs">
-            <span className="font-bold text-emerald-400 block mb-1">Dense Traffic Multi-Class Object Tracking</span>
+            <span className="font-bold text-emerald-400 block mb-1">Multi-Vehicle Tracking in Heavy Traffic</span>
             <p className="text-[11px] text-neutral-300 leading-snug">
-              Simultaneous real-time detection & trajectory modeling across varied vehicle classes (autorickshaws, heavy commercial trucks, passenger cars) under variable road lighting.
+              Real-time detection and distance tracking across diverse vehicle types—autorickshaws, trucks, buses, and two-wheelers—tested in varying lighting and road congestion.
             </p>
           </div>
         </div>
@@ -75,9 +75,9 @@ export const CaseStudyADAS: React.FC = () => {
               </span>
               <Radio className="w-4 h-4 text-emerald-600" />
             </div>
-            <h4 className="text-xl font-bold text-neutral-900">Low-Latency 5G Network Pipeline</h4>
+            <h4 className="text-xl font-bold text-neutral-900">Low-Latency 5G Communication</h4>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Designed a sub-10ms 5G V2X (Vehicle-to-Everything) transmission layer that broadcasts relative vehicle velocity, braking vectors, and distance deltas to roadside units (RSUs) and proximate connected vehicles.
+              Sends speed, braking, and distance updates between nearby vehicles and roadside units with under 10ms latency, giving connected cars a live picture of road hazards ahead.
             </p>
           </div>
 
@@ -97,9 +97,9 @@ export const CaseStudyADAS: React.FC = () => {
               </span>
               <Activity className="w-4 h-4 text-blue-600" />
             </div>
-            <h4 className="text-xl font-bold text-neutral-900">Predictive Trajectory Forecasting</h4>
+            <h4 className="text-xl font-bold text-neutral-900">Collision Warning Engine</h4>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Calculates Time-to-Collision (TTC) using Kalman filters and lightweight neural bounding-box displacement forecasting, generating progressive audio-visual alerts before physical driver reaction windows expire.
+              Estimates Time-to-Collision (TTC) using tracking algorithms and bounding box motion, alerting the driver 2.5 seconds before potential impact to provide adequate reaction time.
             </p>
           </div>
 

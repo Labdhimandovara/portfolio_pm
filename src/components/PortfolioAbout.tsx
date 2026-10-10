@@ -54,14 +54,14 @@ export const PortfolioAbout: React.FC = () => {
   ];
 
   const superPowers = [
-    { title: "Product Strategy & PRDs", desc: "Translating fuzzy problems into clear scopes, boundary conditions, and decision trees." },
-    { title: "Agentic AI & MCP Protocol", desc: "Architecting autonomous tool-use protocols, multi-merchant search, and 6-gate policy engines." },
-    { title: "Real-Time Streaming Voice", desc: "Benchmarking streaming STT → LLM → TTS pipelines for sub-500ms conversation latency." },
-    { title: "Deterministic Guardrails", desc: "Combining mathematical algorithms with generative AI fallbacks for 100% verified answers." },
-    { title: "Rapid High-Fidelity UX", desc: "Prototyping 50+ screens for inclusive multimodal and vernacular voice-first accessibility." },
-    { title: "Automated QA & Telemetry", desc: "Building 664 unit test suites and turn-by-turn latency profilers for rock-solid reliability." },
-    { title: "Multi-Agent Orchestration", desc: "Choreographing CrewAI swarms with dedicated roles, tools, and CRM synchronizations." },
-    { title: "Cross-Functional Leadership", desc: "Leading departmental magazines, hackathon delegations, and cross-team collaborations." },
+    { title: "Product Thinking & PRDs", desc: "Turning ambiguous problems into clear feature scopes, user journeys, and specifications." },
+    { title: "AI & Agentic Systems", desc: "Building practical AI tools, agent workflows (MCP), and safe checkout guardrails." },
+    { title: "Real-Time Voice AI", desc: "Testing low-latency streaming pipelines so voice interactions feel natural and responsive." },
+    { title: "Reliable Logic + AI", desc: "Combining deterministic formulas with LLMs so outputs stay accurate and grounded." },
+    { title: "UI/UX Prototyping", desc: "Designing simple, accessible interfaces that non-technical users can navigate without friction." },
+    { title: "Testing & Code Reliability", desc: "Writing comprehensive automated test suites so products don't fail when people need them." },
+    { title: "Multi-Agent Automation", desc: "Orchestrating multi-agent tasks (CrewAI) for search, document analysis, and CRM sync." },
+    { title: "Team Leadership", desc: "Leading student publications, hackathon teams, and cross-functional projects to delivery." },
   ];
 
   const artworks = [
@@ -139,11 +139,11 @@ export const PortfolioAbout: React.FC = () => {
           <h3 className="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
             Hi, I'm Labdhi.
           </h3>
-          <p className="text-sm sm:text-base text-neutral-600 leading-relaxed font-normal">
-            AI Engineer and Product Builder from India. I design and build experiences that feel effortless, blending intelligent agentic systems and intuitive UX seamlessly into everyday life so it becomes not just functional, but delightful.
+          <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-normal">
+            I'm an AI engineer and product builder from India who loves building useful, intuitive products. I focus on connecting deep technical systems—like AI agents, real-time voice, and computer vision—with clean, human-centered experiences.
           </p>
           <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed font-normal">
-            B.Tech in Electronics & Telecommunication at Symbiosis Institute of Technology, Pune (CGPA 8.4). Nomura KakushIN Finalist (Team Cortex). Razorpay Buildathon 2026 builder (Raya). LaserHacks 2025 Finalist (Team Emodio).
+            B.Tech in Electronics & Telecommunication at Symbiosis Institute of Technology, Pune (CGPA 8.4). Nomura KakushIN Finalist (Team Cortex) • Razorpay Buildathon 2026 builder (Raya) • LaserHacks 2025 Global Finalist (Team Emodio).
           </p>
         </div>
 

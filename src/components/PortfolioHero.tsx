@@ -27,10 +27,10 @@ export const PortfolioHero: React.FC<HeroProps> = ({ onOpenContact }) => {
     {
       id: 'books',
       label: 'Books',
-      category: 'Product & Systems',
+      category: 'Reading List',
       icon: <BookOpen className="w-3.5 h-3.5 text-blue-500" />,
       title: 'Current Bookshelf',
-      description: 'Books that shape my thinking on product architectures, human behavior, and high-agency engineering.',
+      description: 'Books I enjoy reading when I take time away from screens.',
       x: '38%',
       y: '18%',
       details: [
@@ -47,88 +47,88 @@ export const PortfolioHero: React.FC<HeroProps> = ({ onOpenContact }) => {
       category: 'Greenery',
       icon: <Coffee className="w-3.5 h-3.5 text-emerald-500" />,
       title: 'Desk Plant',
-      description: 'A touch of calm and patience during intensive hackathons, training runs, and debugging marathons.',
+      description: 'A little bit of calm and green on my workspace during late night builds.',
       x: '52%',
       y: '17%',
-      details: ['Brings fresh focus & greenery to the workstation']
+      details: ['Keeps the workspace fresh and grounded']
     },
     {
       id: 'games',
       label: 'Fav Games',
-      category: 'PlayStation & Strategy',
+      category: 'Gaming',
       icon: <Gamepad2 className="w-3.5 h-3.5 text-indigo-500" />,
-      title: 'Gaming & Strategy',
-      description: 'Big fan of world-building and tactical decision-making in video games.',
+      title: 'Favorite Games',
+      description: 'Games I enjoy playing to unwind and think through strategy.',
       x: '64%',
       y: '18%',
       details: [
         'God of War (Ragnarok)',
         'Horizon Zero Dawn',
-        'FIFA / EA FC',
-        'Chess Strategy'
+        'EA FC / FIFA',
+        'Chess'
       ]
     },
     {
       id: 'camera',
       label: 'Camera',
-      category: 'Moments & Photography',
+      category: 'Moments',
       icon: <Camera className="w-3.5 h-3.5 text-amber-500" />,
-      title: 'Visual Storytelling',
-      description: 'Capturing candid human moments, street architecture, and visual aesthetics off-screen.',
+      title: 'Photography',
+      description: 'Capturing everyday moments, travel frames, and interesting architecture.',
       x: '39%',
       y: '33%',
       details: [
-        'Analog-style photography',
-        'Visual composition & framing',
-        'Travel memories from Maharashtra & MP'
+        'Street and travel photography',
+        'Visual composition and framing',
+        'Memories from Pune & Indore'
       ]
     },
     {
       id: 'speakers',
       label: 'Fav Songs',
-      category: 'Audio & Voice AI',
+      category: 'Music',
       icon: <Music className="w-3.5 h-3.5 text-rose-500" />,
-      title: 'Smart Audio & Fav Songs',
-      description: 'Music that powers my late-night focus sessions, plus my obsession with real-time streaming voice pipelines.',
+      title: 'Favorite Music & Audio',
+      description: 'Soundtracks and playlists that keep me in focus while building.',
       x: '51%',
       y: '33%',
       details: [
-        'Ambient Lo-Fi & Indie Folk',
-        'Coke Studio Season 14',
-        'A.R. Rahman Classics',
+        'Lo-Fi and Indie acoustic',
+        'Coke Studio classics',
+        'A.R. Rahman',
         'Ludovico Einaudi & Hans Zimmer'
       ]
     },
     {
       id: 'boardgames',
       label: 'Board Games',
-      category: 'Tabletop Strategy & Puzzles',
+      category: 'Board Games & Puzzles',
       icon: <Gamepad2 className="w-3.5 h-3.5 text-orange-500" />,
-      title: 'Favorite Board Games & Puzzles',
-      description: 'Strategic planning, resource optimization, and spatial algorithmic logic.',
+      title: 'Favorite Board Games',
+      description: 'My favorite games for game nights with friends and family.',
       x: '65%',
       y: '34%',
       details: [
-        'Chess (Tactical Strategy & Foresight)',
-        'Splendor (Resource Engine Building)',
-        'Monopoly (Negotiation & Trade)',
-        'Rubik\'s Cube (Spatial & Algorithmic Solving)'
+        'Chess (Tactics & foresight)',
+        'Splendor (Engine building)',
+        'Monopoly (Trading & negotiation)',
+        'Rubik\'s Cube (Algorithmic solving)'
       ]
     },
     {
       id: 'workstation',
-      label: 'Code & PRDs',
-      category: 'AI Engineering & Product Work',
+      label: 'Code & Product',
+      category: 'Workspace',
       icon: <Laptop className="w-3.5 h-3.5 text-blue-600" />,
       title: 'Primary Workstation',
-      description: 'Where ideas transform into tested software, MCP tools, and production-ready AI products.',
+      description: 'Where I prototype products, write code, and explore AI systems.',
       x: '52%',
       y: '53%',
       details: [
-        'Building Raya (Agentic Commerce for Razorpay)',
-        'Designing Dhan Saarthi (Nomura KakushIN Finalist)',
-        'Benchmarking Agora vs Pipecat (Edysor AI)',
-        'Writing 664 unit tests for deterministic solvers'
+        'Raya (Agentic Commerce for Razorpay)',
+        'Dhan Saarthi (Nomura KakushIN Finalist)',
+        'VoiceBot & latency benchmarks (Edysor AI)',
+        'Deterministic math solver with 664 unit tests'
       ]
     }
   ];

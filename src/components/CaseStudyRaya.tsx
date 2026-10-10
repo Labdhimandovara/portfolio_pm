@@ -19,12 +19,12 @@ export const CaseStudyRaya: React.FC = () => {
   const [activeGate, setActiveGate] = useState<number>(0);
 
   const policyGates = [
-    { title: "Gate 1: Intent & Category Alignment", desc: "Verifies user prompt semantically matches catalog tool query parameters." },
-    { title: "Gate 2: Real-time Price Revalidation", desc: "Pings live merchant API to prevent stale caching attacks before checkout." },
-    { title: "Gate 3: Merchant Authorization Signature", desc: "Validates HMAC cryptographic key of participating merchant storefront." },
-    { title: "Gate 4: Spend Cap & Anomaly Threshold", desc: "Restricts autonomous agent cart totals within predefined user safety limit." },
-    { title: "Gate 5: User-in-the-Loop Confirmation", desc: "Mandates explicit cryptographic biometric/OTP confirmation for execution." },
-    { title: "Gate 6: Idempotent Razorpay Session", desc: "Generates one-time payment payload preventing duplicate settlement attempts." }
+    { title: "Gate 1: Product Match Check", desc: "Confirms the agent's product selection accurately matches what the customer requested." },
+    { title: "Gate 2: Live Price Check", desc: "Checks store prices in real time right before checkout to prevent unexpected price changes." },
+    { title: "Gate 3: Merchant Verification", desc: "Validates that the store is genuine using authenticated merchant credentials." },
+    { title: "Gate 4: Spending Limit Cap", desc: "Enforces user budget caps so the agent can never add items beyond set limits." },
+    { title: "Gate 5: User Confirmation", desc: "Prompts the customer to review the cart and tap approve before any payment is initiated." },
+    { title: "Gate 6: One-Time Payment Session", desc: "Creates a single-use Razorpay checkout link so users are never charged twice." }
   ];
 
   return (
@@ -138,14 +138,14 @@ export const CaseStudyRaya: React.FC = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2">
           {[
-            { step: "01", name: "User Intent", desc: "Natural prompt" },
-            { step: "02", name: "AI Agent", desc: "Intent parsing" },
-            { step: "03", name: "Discovery", desc: "3 MCP catalogs" },
-            { step: "04", name: "Comparison", desc: "Spec synthesis" },
-            { step: "05", name: "Cart", desc: "Unified bundle" },
-            { step: "06", name: "Approval", desc: "User biometric" },
-            { step: "07", name: "Payment", desc: "Razorpay session" },
-            { step: "08", name: "Order", desc: "State committed" }
+            { step: "01", name: "User Request", desc: "Natural prompt" },
+            { step: "02", name: "AI Agent", desc: "Understands request" },
+            { step: "03", name: "Store Search", desc: "Searches 3 stores" },
+            { step: "04", name: "Compare", desc: "Ranks best options" },
+            { step: "05", name: "Cart Review", desc: "Prepares order" },
+            { step: "06", name: "User Approval", desc: "User confirms" },
+            { step: "07", name: "Razorpay", desc: "Secure checkout" },
+            { step: "08", name: "Order Placed", desc: "Confirmed" }
           ].map((item, idx) => (
             <div 
               key={idx}

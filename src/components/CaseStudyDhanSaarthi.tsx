@@ -89,41 +89,41 @@ export const CaseStudyDhanSaarthi: React.FC = () => {
         <h3 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 tracking-tight">
           Dhan Saarthi — Making Financial Guidance Accessible
         </h3>
-        <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
-          An AI-powered financial inclusion ecosystem architected as a 3-layer fintech platform, uniting voice-first multilingual accessibility, consent-driven onboarding, and personalized guidance for underbanked citizens.
+        <p className="text-base sm:text-lg text-neutral-700 max-w-3xl leading-relaxed">
+          A financial guidance app for families and shop owners across India who find typical banking apps complicated. Designed with voice interaction in local languages, simple budget tools, and offline access.
         </p>
       </div>
 
       {/* 5-Step Product Flow Architecture */}
       <div className="mt-8 p-6 rounded-2xl bg-amber-50/60 border border-amber-200/60">
         <span className="text-xs font-mono uppercase tracking-wider font-bold text-amber-900 block mb-4">
-          Product Evolution & User Journey
+          How We Built It • 5 Key Stages
         </span>
         <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 text-center">
           <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
             <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 1</span>
-            <p className="text-xs font-bold text-neutral-900">Problem Framing</p>
-            <p className="text-[11px] text-neutral-500 mt-1">400M citizens excluded by language & complexity</p>
+            <p className="text-xs font-bold text-neutral-900">User Research</p>
+            <p className="text-[11px] text-neutral-500 mt-1">Understanding why banking apps feel intimidating</p>
           </div>
           <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
             <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 2</span>
-            <p className="text-xs font-bold text-neutral-900">User Needs</p>
-            <p className="text-[11px] text-neutral-500 mt-1">Voice-first, jargon-free, trust & privacy clarity</p>
+            <p className="text-xs font-bold text-neutral-900">Core Needs</p>
+            <p className="text-[11px] text-neutral-500 mt-1">Voice-first navigation, simple terms, clear privacy</p>
           </div>
           <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
             <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 3</span>
-            <p className="text-xs font-bold text-neutral-900">Product Ecosystem</p>
-            <p className="text-[11px] text-neutral-500 mt-1">10+ modular personas & 50+ screen UI flows</p>
+            <p className="text-xs font-bold text-neutral-900">UI/UX Design</p>
+            <p className="text-[11px] text-neutral-500 mt-1">10 key modules and 50+ prototype screens</p>
           </div>
           <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
             <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 4</span>
-            <p className="text-xs font-bold text-neutral-900">AI Intelligence</p>
-            <p className="text-[11px] text-neutral-500 mt-1">Vernacular LLM + deterministic cashflow twin</p>
+            <p className="text-xs font-bold text-neutral-900">Smart Features</p>
+            <p className="text-[11px] text-neutral-500 mt-1">Voice assistant + simple cashflow calculations</p>
           </div>
           <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
             <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 5</span>
-            <p className="text-xs font-bold text-neutral-900">Personalized Journey</p>
-            <p className="text-[11px] text-neutral-500 mt-1">Actionable habit nudges & offline sync safety</p>
+            <p className="text-xs font-bold text-neutral-900">User Experience</p>
+            <p className="text-[11px] text-neutral-500 mt-1">Gentle savings reminders & offline support</p>
           </div>
         </div>
       </div>

@@ -23,27 +23,27 @@ export const CaseStudyFraudShield: React.FC = () => {
       title: 'Call Verification',
       icon: <PhoneCall className="w-5 h-5 text-purple-600" />,
       tagline: 'Deepfake & Voice Extortion Scams',
-      problem: 'Elderly citizens receiving urgent spoofed voice calls claiming a relative is detained or hospitalized.',
-      mlPipeline: 'Acoustic artifact classification, synthetic pitch jitter detection & speaker verification model.',
-      userOutput: 'Clear verdict ("Likely Synthetic Voice 92% confidence") + immediate 1-click instruction to call relative via trusted direct contact.'
+      problem: 'Elderly citizens receiving urgent spoofed voice calls claiming a family member is in trouble or hospitalized.',
+      mlPipeline: 'Audio analysis checks pitch jitter and acoustic spectral patterns to tell real human speech apart from synthetic clones.',
+      userOutput: 'Clear verdict ("Likely Synthetic Voice: 92%") plus an immediate prompt to call back the relative on a trusted saved number.'
     },
     {
       id: 'tx' as const,
       title: 'Transaction Fraud',
       icon: <CreditCard className="w-5 h-5 text-blue-600" />,
       tagline: 'Phishing SMS & Fake Payment Links',
-      problem: 'Misleading UPI payment request SMS masquerading as bank electricity bill warnings or tax penalties.',
-      mlPipeline: 'NLP linguistic phishing pattern extraction & URL domain anomaly inspection via FastAPI.',
-      userOutput: 'Highlight of suspicious payment gateway redirect + immediate bank fraud helpline dialer (1930).'
+      problem: 'Misleading UPI payment requests or fake electricity bill warnings trying to trick users into transferring money.',
+      mlPipeline: 'FastAPI backend checks text phishing patterns and domain redirects against verified payment gateway lists.',
+      userOutput: 'Highlights fake payment links and gives a 1-tap dialer for the national cyber fraud helpline (1930).'
     },
     {
       id: 'note' as const,
       title: 'Counterfeit Currency',
       icon: <Banknote className="w-5 h-5 text-emerald-600" />,
-      tagline: 'Physical Bank Note Security Verification',
-      problem: 'Small street vendors receiving questionable high-denomination bank notes in poorly lit markets.',
-      mlPipeline: 'Computer Vision watermark and micro-lettering feature verification trained on currency hallmarks.',
-      userOutput: 'Visual bounding box highlighting missing micro-lettering or magnetic stripe alignment.'
+      tagline: 'Physical Bank Note Inspection',
+      problem: 'Local street vendors receiving fake high-value notes in busy, poorly lit markets.',
+      mlPipeline: 'Computer vision model trained to verify official RBI security watermarks, magnetic threads, and micro-lettering.',
+      userOutput: 'Clear visual bounding box showing if security threads or watermarks are missing.'
     }
   ];
 
@@ -76,7 +76,7 @@ export const CaseStudyFraudShield: React.FC = () => {
           Citizen Fraud Shield — Designing for Digital Safety
         </h3>
         <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
-          A public-facing AI safety platform designed for non-technical citizens. Eliminating high-stress scam ambiguity through fast ML verification, plain-English explainability, and calm emergency guidance.
+          A safety app designed for everyday citizens. When someone receives a suspicious call, phishing text, or questionable currency note, Fraud Shield gives them a fast verdict and calm, step-by-step guidance instead of confusion.
         </p>
 
         {/* Live Demo Video Callout */}
@@ -190,20 +190,20 @@ export const CaseStudyFraudShield: React.FC = () => {
         {/* Core Product PM Focus */}
         <div className="space-y-3">
           <h4 className="text-sm font-mono uppercase tracking-wider font-bold text-neutral-900">
-            UX Principles for High-Urgency Situations
+            UX Principles for High-Stress Moments
           </h4>
           <ul className="space-y-2.5 text-xs sm:text-sm text-neutral-700">
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-purple-600 mt-0.5 shrink-0" />
-              <span><strong>Sub-3-Second Latency:</strong> Users testing live scam calls cannot wait for heavy pipelines; optimized endpoints via FastAPI.</span>
+              <span><strong>Fast Answers:</strong> Waiting even a few seconds causes panic during a suspected scam. Optimized API response times to under 3 seconds.</span>
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-purple-600 mt-0.5 shrink-0" />
-              <span><strong>Calm, Jargon-Free UX:</strong> Replaced technical loss functions with soothing, unambiguous action directives.</span>
+              <span><strong>Plain English:</strong> No confusing percentages or model loss terms—just clear "Safe" or "High Risk" verdicts with what to do next.</span>
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-purple-600 mt-0.5 shrink-0" />
-              <span><strong>Gemini Interactive Support:</strong> Provides reassurance and guides citizens through freezing accounts safely.</span>
+              <span><strong>Calm Guidance:</strong> An interactive Gemini assistant helps victims freeze accounts, take screenshots, and file reports without feeling overwhelmed.</span>
             </li>
           </ul>
         </div>

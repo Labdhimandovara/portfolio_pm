@@ -49,10 +49,10 @@ export const CaseStudyMathEngineer: React.FC = () => {
       {/* Title & Core Philosophy */}
       <div className="mt-6 space-y-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 tracking-tight">
-          MathEngineer — Turning Step-by-Step Learning into a Product
+          MathEngineer — Step-by-Step Math Learning
         </h3>
-        <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
-          Bridging mathematical rigor and student pedagogy through a deterministic-first engine. Built with 664 automated tests, OCR handwritten equation capture, and a 4-tier tutoring architecture.
+        <p className="text-base sm:text-lg text-neutral-700 max-w-3xl leading-relaxed">
+          An engineering math tool that scans handwritten equations, calculates verified step-by-step derivations, and provides progressive hints instead of jumping straight to the answer.
         </p>
       </div>
 
@@ -60,17 +60,17 @@ export const CaseStudyMathEngineer: React.FC = () => {
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="p-5 rounded-2xl bg-neutral-50 border border-neutral-200 space-y-2">
           <span className="text-[11px] font-mono font-bold uppercase text-red-600">The Problem</span>
-          <h4 className="text-sm font-bold text-neutral-900">Calculators Output Answers; LLMs Hallucinate Math</h4>
+          <h4 className="text-sm font-bold text-neutral-900">Calculators Skip Steps; AI Bots Make Calculation Mistakes</h4>
           <p className="text-xs text-neutral-600 leading-relaxed">
-            Engineering students solving complex numerical methods (Runge-Kutta, Euler, Newton-Raphson) either receive a cold single number with zero derivation, or ask generative LLMs that frequently invent incorrect numerical arithmetic.
+            Engineering students learning numerical methods (Runge-Kutta, Euler, Newton-Raphson) either get a bare final number with no derivation, or ask LLMs that frequently make basic arithmetic errors.
           </p>
         </div>
 
         <div className="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-2">
-          <span className="text-[11px] font-mono font-bold uppercase text-emerald-700">The Product Response</span>
-          <h4 className="text-sm font-bold text-neutral-900">Deterministic Computation + Socratic AI Tutoring</h4>
+          <span className="text-[11px] font-mono font-bold uppercase text-emerald-700">How We Solved It</span>
+          <h4 className="text-sm font-bold text-neutral-900">Exact Mathematical Formulas + Helpful AI Hints</h4>
           <p className="text-xs text-neutral-700 leading-relaxed">
-            Math is computed deterministically by verified algorithms guaranteeing 100% precision. Generative AI is strictly relegated to Socratic pedagogical explanation, guided hints, and textbook context retrieval.
+            Calculations are computed using verified deterministic code backed by 664 tests. AI is only used to provide clear explanations, textbook references, and step-by-step hints.
           </p>
         </div>
       </div>

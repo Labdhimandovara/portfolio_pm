@@ -32,7 +32,7 @@ export const CaseStudyEmodio: React.FC = () => {
           Emodio — Acoustic AI & Vocal Biomarkers
         </h3>
         <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
-          An AI-driven teletherapy companion analyzing subtle vocal biomarkers, speech prosody, and micro-acoustic tremors to provide objective longitudinal mood tracking for therapists and patients.
+          A teletherapy companion that analyzes voice pitch, tone, and speech rhythm to help therapists track how a patient's mood evolves between sessions.
         </p>
       </div>
 
@@ -65,13 +65,13 @@ export const CaseStudyEmodio: React.FC = () => {
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-[10px] font-mono font-bold uppercase text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md border border-purple-200">
-                01 • ACOUSTIC PREPROCESSING
+                01 • ACOUSTIC ANALYSIS
               </span>
               <Waves className="w-4 h-4 text-purple-600" />
             </div>
-            <h4 className="text-xl font-bold text-neutral-900">MFCC & Prosody Extraction</h4>
+            <h4 className="text-xl font-bold text-neutral-900">Voice Feature Extraction</h4>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Extracted 40 Mel-Frequency Cepstral Coefficients (MFCCs), spectral centroid, chroma features, and zero-crossing rates from raw PCM audio to isolate vocal tension and emotional inflection independent of spoken language semantics.
+              Extracts 40 Mel-Frequency Cepstral Coefficients (MFCCs), pitch variance, and speaking pace from audio clips to identify emotional stress regardless of the words spoken.
             </p>
           </div>
 
@@ -91,9 +91,9 @@ export const CaseStudyEmodio: React.FC = () => {
               </span>
               <Brain className="w-4 h-4 text-blue-600" />
             </div>
-            <h4 className="text-xl font-bold text-neutral-900">Bidirectional LSTM Classification</h4>
+            <h4 className="text-xl font-bold text-neutral-900">Emotion Recognition Model</h4>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Implemented a Bidirectional Long Short-Term Memory (BiLSTM) network with spatial dropout layers to capture long-range acoustic pitch fluctuations across multi-sentence clinical consultation check-ins.
+              Trained a Bidirectional LSTM neural network on over 15,000 speech samples to recognize 5 core emotional states across natural conversational pauses with under 120ms latency.
             </p>
           </div>
 

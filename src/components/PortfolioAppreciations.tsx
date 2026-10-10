@@ -10,29 +10,29 @@ export const PortfolioAppreciations: React.FC = () => {
     {
       title: "Nomura KakushIN 10.0 — Finalist",
       issuedBy: "Nomura Services India Private Limited",
-      category: "Information Technology Division Coding Contest",
+      category: "IT Division Coding Contest",
       date: "July 04, 2026",
       team: "Team Cortex (Labdhi Mandovara)",
-      highlight: "Selected as Finalist among 1,000+ national competitive teams",
-      description: "Recognized by Nomura's Technology & Data division leadership for architecting Dhan Saarthi — an inclusive 3-layer fintech platform featuring a deterministic household Financial Twin, 10+ modules, and 50+ screens for vernacular guidance."
+      highlight: "Selected as Finalist from 1,000+ Teams",
+      description: "Selected as a national finalist for building Dhan Saarthi, a financial guidance companion designed with voice assistance in regional languages, simple onboarding, and household budgeting tools."
     },
     {
       title: "LaserHacks 2025 — Lasell University, USA",
       issuedBy: "SCRS Student Chapter at Lasell University, USA",
-      category: "Global AI & Health Hackathon",
+      category: "Global Health AI Hackathon",
       date: "November 15–16, 2025",
       team: "Team Emodio (Labdhi Mandovara, Ashutosh Singh)",
       highlight: "Day-2 Global Finalist Selection",
-      description: "Awarded for outstanding engineering of Emodio, an AI-powered teletherapy platform leveraging vocal biomarkers and speech emotion classification for longitudinal patient monitoring."
+      description: "Recognized as a global finalist for building Emodio, an AI teletherapy project that analyzes speech emotion and vocal patterns to help track patient mood changes over time."
     },
     {
       title: "Razorpay Buildathon 2026",
       issuedBy: "Razorpay Fintech Innovation",
-      category: "Agentic AI & Commerce Protocol",
+      category: "Agentic Commerce Protocol",
       date: "September 2026",
       team: "Raya Commerce Engine",
-      highlight: "MCP Agentic Commerce & 6-Gate Payment Engine",
-      description: "Engineered Raya, connecting 3 live merchant catalogs with Model Context Protocol (MCP) tool routing and a 6-gate cryptographic payment policy engine ready for 12M+ Razorpay merchants."
+      highlight: "6-Gate Payment Engine • Live YouTube Demo",
+      description: "Built Raya, an agentic shopping system where AI agents can browse multiple store catalogs, compare products, and complete secure checkouts with Razorpay."
     }
   ];
 

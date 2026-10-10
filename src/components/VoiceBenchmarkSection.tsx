@@ -44,7 +44,7 @@ export const VoiceBenchmarkSection: React.FC = () => {
           Voice as a Product Interface
         </h3>
         <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
-          Quantitative benchmarking of real-time voice architectures (Agora vs Pipecat) across streaming STT, LLM inference, and TTS synthesis — paired with a 3-language multilingual voice assistant.
+          Benchmarking real-time voice architectures (Agora vs Pipecat) to make conversational AI feel instant and natural. Combined with a multilingual assistant supporting Hindi, Telugu, and mixed phrasing.
         </p>
 
         {/* Live Demo Video Callout */}
@@ -119,12 +119,12 @@ export const VoiceBenchmarkSection: React.FC = () => {
                   <span className="text-[10px] font-mono text-neutral-400 font-bold">STAGE 01</span>
                   <Mic className="w-4 h-4 text-blue-400" />
                 </div>
-                <h4 className="text-sm font-bold text-white">Streaming STT (Speech-to-Text)</h4>
+                <h4 className="text-sm font-bold text-white">Streaming Speech-to-Text</h4>
                 <p className="text-xs text-neutral-300 leading-relaxed">
-                  Deepgram Nova streaming WebSocket connection. Emits incremental transcript tokens before utterance completes.
+                  Listens through a streaming WebSocket with Deepgram Nova, converting spoken words into text tokens before the sentence finishes.
                 </p>
                 <div className="pt-2 text-[11px] font-mono text-blue-300">
-                  Focus: Interim transcripts & VAD cutoffs
+                  Goal: Fast voice activity detection without awkward cutoffs
                 </div>
               </div>
 
@@ -135,10 +135,10 @@ export const VoiceBenchmarkSection: React.FC = () => {
                 </div>
                 <h4 className="text-sm font-bold text-white">Streaming LLM Inference</h4>
                 <p className="text-xs text-neutral-300 leading-relaxed">
-                  Groq ultra-fast LPU inference / low-latency completions. Streams first response tokens to TTS immediately.
+                  Groq fast inference generates answers word-by-word, streaming the first response tokens to speech synthesis right away.
                 </p>
                 <div className="pt-2 text-[11px] font-mono text-purple-300">
-                  Focus: Time-to-First-Token (TTFT)
+                  Goal: Immediate thinking-to-speaking transition
                 </div>
               </div>
 
@@ -147,12 +147,12 @@ export const VoiceBenchmarkSection: React.FC = () => {
                   <span className="text-[10px] font-mono text-neutral-400 font-bold">STAGE 03</span>
                   <Volume2 className="w-4 h-4 text-emerald-400" />
                 </div>
-                <h4 className="text-sm font-bold text-white">Streaming TTS & Playback</h4>
+                <h4 className="text-sm font-bold text-white">Streaming Audio Playback</h4>
                 <p className="text-xs text-neutral-300 leading-relaxed">
-                  Cartesia Sonic streaming synthesis. Audio frames pushed into WebRTC audio track with instant barge-in cancellation.
+                  Cartesia Sonic turns text tokens into natural audio over WebRTC, stopping instantly if the user speaks (barge-in).
                 </p>
                 <div className="pt-2 text-[11px] font-mono text-emerald-300">
-                  Focus: First audio chunk playback & interruption
+                  Goal: Natural conversational interruption without delay
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ export const VoiceBenchmarkSection: React.FC = () => {
                   Architectural Benchmark: Agora vs Pipecat
                 </h4>
                 <p className="text-xs text-neutral-600 mt-0.5">
-                  Automated 100-turn latency harness tracking P50, P90, P95, mean, max latency, and failure rates.
+                  Automated 100-turn latency harness tracking P50, P90, P95, mean response time, and failure rates.
                 </p>
               </div>
               <span className="px-3 py-1 rounded-full bg-neutral-200 text-neutral-800 text-xs font-mono font-semibold self-start">
@@ -183,9 +183,9 @@ export const VoiceBenchmarkSection: React.FC = () => {
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-50 text-blue-700 font-semibold">WebRTC Native</span>
                 </div>
                 <ul className="space-y-2 text-xs text-neutral-600">
-                  <li><strong>Transport:</strong> Proprietary SD-RTN network optimized for global telecommunications.</li>
-                  <li><strong>Barge-in:</strong> Client-side audio channel mute & server-side interrupt signaling.</li>
-                  <li><strong>Trade-off:</strong> Highly resilient network packet loss recovery; requires SDK bridging for Python server agents.</li>
+                  <li><strong>Network:</strong> Built on a global real-time network with resilient packet loss handling.</li>
+                  <li><strong>Barge-in:</strong> Client-side muting and server signals cancel output immediately when the user talks.</li>
+                  <li><strong>Trade-off:</strong> Highly resilient on spotty mobile connections; requires custom bridge code for Python server agents.</li>
                 </ul>
               </div>
 
@@ -196,15 +196,15 @@ export const VoiceBenchmarkSection: React.FC = () => {
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-50 text-purple-700 font-semibold">Open Framework</span>
                 </div>
                 <ul className="space-y-2 text-xs text-neutral-600">
-                  <li><strong>Transport:</strong> Asynchronous Python streaming pipeline integrating WebRTC (Daily/LiveKit).</li>
-                  <li><strong>Barge-in:</strong> Direct pipeline frame cancellation upon speech detection event.</li>
-                  <li><strong>Trade-off:</strong> Extremely modular component pluggability; sensitive to local event-loop scheduling.</li>
+                  <li><strong>Network:</strong> Asynchronous Python streaming pipeline connected over WebRTC (Daily/LiveKit).</li>
+                  <li><strong>Barge-in:</strong> Drops audio frames immediately the moment the mic picks up user speech.</li>
+                  <li><strong>Trade-off:</strong> Clean and modular to swap models; sensitive to Python async event-loop scheduling under heavy loads.</li>
                 </ul>
               </div>
             </div>
 
             <div className="p-4 rounded-xl bg-neutral-100 text-xs text-neutral-700 font-mono">
-              Metrics Monitored: STT Turnaround • Time-to-First-Token (TTFT) • TTS Chunk Latency • End-to-End P50/P90/P95 • Failure Rate %
+              Metrics Monitored: STT Turnaround • Time-to-First-Token (TTFT) • TTS Audio Latency • End-to-End P50/P90/P95 • Failure Rate %
             </div>
           </div>
         )}

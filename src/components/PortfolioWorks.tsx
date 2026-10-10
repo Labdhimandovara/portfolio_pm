@@ -34,9 +34,9 @@ export const PortfolioWorks: React.FC = () => {
       projectCount: 'Agentic Commerce',
       year: '2026',
       role: 'Product Architect & AI Engineer',
-      skills: 'Agentic AI, MCP Protocol, 6-Gate Policy Engine, PostgreSQL',
-      scaleHighlight: '3 Connected Merchants • 6-Gate Payment Policy Engine • 12M+ Razorpay Scale',
-      description: 'An MCP-powered agentic commerce platform designed to let AI agents discover products across multiple storefronts, compare options, assemble shopping carts, and complete secure checkout through a 6-gate payment policy engine.',
+      skills: 'Agentic AI, Model Context Protocol (MCP), Payment Guardrails, PostgreSQL',
+      scaleHighlight: '3 Connected Stores • 6 Payment Safety Gates • Live YouTube Demo',
+      description: 'An AI shopping assistant where agents browse store catalogs, compare products, build carts, and trigger secure checkouts using Razorpay APIs.',
       accent: '#2D5BFF'
     },
     {
@@ -46,21 +46,21 @@ export const PortfolioWorks: React.FC = () => {
       projectCount: '10+ Modules • 50+ Screens',
       year: '2026',
       role: 'Lead Product Designer & System Architect',
-      skills: 'Financial Inclusion, Voice-First UX, Financial Twin, 3-Layer Fintech Architecture',
-      scaleHighlight: 'Selected as Finalist from 1,000+ Teams • 24/7 Vernacular Guidance',
-      description: 'An AI-powered financial inclusion ecosystem architected as a 3-layer fintech platform, uniting voice-first multilingual accessibility, consent-driven onboarding, and an intelligent household Financial Twin.',
+      skills: 'Fintech UX, Multilingual Voice, Household Budgeting, System Architecture',
+      scaleHighlight: 'National Finalist from 1,000+ Teams • Local Language Voice Guidance',
+      description: 'A financial guidance app for families and shop owners in India, offering local-language voice assistance, simple budgeting, and clear savings goals.',
       accent: '#E07A5F'
     },
     {
       id: 'math',
       title: 'MathEngineer',
-      brand: 'EdTech Systems Innovation',
+      brand: 'EdTech Systems',
       projectCount: '7 Modules • 20 Practice Bank',
       year: '2026',
       role: 'Full-Stack Product Builder',
-      skills: 'Deterministic Solvers, 664 Unit Tests, RAG, Multimodal OCR, Gemini Socratic Fallback',
-      scaleHighlight: '664 Automated Tests Passing • 3 Verified Numerical Methods',
-      description: 'A deterministic-first engineering mathematics solver turning step-by-step learning into an interactive product with OCR handwritten equation parsing, textbook RAG, and graduated Socratic hints.',
+      skills: 'Numerical Methods, 664 Unit Tests, RAG, Handwriting OCR, Gemini Hints',
+      scaleHighlight: '664 Automated Tests Passing • Verified Step-by-Step Derivations',
+      description: 'An engineering math learning tool that scans handwritten equations, verifies derivations with deterministic formulas, and provides guided hints instead of skipping steps.',
       accent: '#3D5A50'
     },
     {
@@ -70,9 +70,9 @@ export const PortfolioWorks: React.FC = () => {
       projectCount: '3 ML Models • FastAPI',
       year: '2026',
       role: 'Product Lead & ML Engineer',
-      skills: 'FastAPI Backend, Deepfake Audio Detection, Phishing NLP, Streamlit & Gemini',
-      scaleHighlight: '3 Verified Scenarios (Voice, SMS, Banknote) • Sub-3s Latency',
-      description: 'A public-facing scam prevention product combining 3 specialized ML detection models, an intuitive Streamlit verification dashboard, and an empathetic Gemini safety assistant for high-stress scam defense.',
+      skills: 'FastAPI, Audio Spoof Detection, Phishing NLP, Streamlit & Gemini',
+      scaleHighlight: '3 Real Checks (Voice, SMS, Banknote) • Live Video Demo Available',
+      description: 'A simple safety tool to help everyday citizens quickly verify suspicious phone calls, phishing SMS links, and counterfeit notes before losing money.',
       accent: '#8338EC'
     },
     {
@@ -82,9 +82,9 @@ export const PortfolioWorks: React.FC = () => {
       projectCount: '100 Automated Turns',
       year: '2026',
       role: 'AI Prompt Engineer Intern & Voice Researcher',
-      skills: 'Agora WebRTC vs Pipecat, Streaming STT-LLM-TTS, Deepgram, Groq LPU, Cartesia, 3 Language Modes',
-      scaleHighlight: 'P50, P90, P95 Latency Profiling • Sub-500ms Human Cadence Focus',
-      description: 'Quantitative benchmarking of real-time streaming voice architectures comparing Agora and Pipecat across streaming STT, LLM inference, and TTS pipelines, paired with a functional 3-language VoiceBot.',
+      skills: 'Agora vs Pipecat, Streaming STT-LLM-TTS, Deepgram, Groq, 3 Languages',
+      scaleHighlight: 'Benchmarked 100 Turns • Sub-500ms Human Cadence • Live Working Demo',
+      description: 'Benchmarked real-time speech pipelines (Agora vs. Pipecat) to test conversation delay and turnaround times, paired with a working 3-language voice bot.',
       accent: '#F77F00'
     },
     {
@@ -94,9 +94,9 @@ export const PortfolioWorks: React.FC = () => {
       projectCount: '6 CrewAI Agents',
       year: '2026',
       role: 'AI Product Builder',
-      skills: 'CrewAI Orchestration, PDF Brochure RAG, Google Sheets CRM API, Indian City Real Estate',
-      scaleHighlight: '6 Autonomous Agents • 6+ Major Indian Cities • Automated CRM Synchronization',
-      description: 'Orchestrating 6 specialized autonomous CrewAI agents to conduct property discovery, legal PDF prospectus retrieval, valuation checks, and seamless CRM synchronization.',
+      skills: 'CrewAI Multi-Agent Swarm, Brochure PDF RAG, Google Sheets CRM API',
+      scaleHighlight: '6 Autonomous Agents • 6+ Major Indian Cities • Auto-Synced CRM',
+      description: 'A multi-agent real estate chatbot that searches listings, reads builder PDF brochures for legal clauses, checks prices, and logs customer inquiries to Google Sheets.',
       accent: '#028090'
     },
     {
@@ -106,21 +106,21 @@ export const PortfolioWorks: React.FC = () => {
       projectCount: 'Real-Time CV & 5G V2X',
       year: '2025 - 2026',
       role: 'Automotive Systems & ML Engineer',
-      skills: 'Computer Vision, Multi-Vehicle Bounding Box Tracking, 5G IoV, Kalman Filters, V2X',
-      scaleHighlight: '98% Accident Prediction Accuracy • Real-Time Dashcam Vehicle Inference',
-      description: 'Safety-critical automotive ML stack combining real-time camera object detection across diverse Indian traffic (autorickshaws, trucks, cars) with 5G V2X trajectory forecasting to avert multi-vehicle collisions.',
+      skills: 'Computer Vision, Multi-Vehicle Tracking, 5G IoV, Trajectory Forecasting',
+      scaleHighlight: '98% Collision Prediction Accuracy • Real Dashcam Vehicle Tracking',
+      description: 'Camera-based object detection tested on Indian road conditions (autorickshaws, trucks, cars) paired with trajectory forecasting to alert drivers before potential crashes.',
       accent: '#10B981'
     },
     {
       id: 'emodio',
       title: 'Emodio — Acoustic AI & Vocal Biomarkers',
-      brand: 'LaserHacks 2025 Global Finalist (Lasell University, USA)',
+      brand: 'LaserHacks 2025 (Lasell University, USA)',
       projectCount: '15,000+ Vocal Samples • BiLSTM',
       year: '2025',
       role: 'Lead Audio ML Engineer & Product Architect',
-      skills: 'Acoustic Biomarkers, MFCC & Prosody, BiLSTM Neural Network, Telehealth Teletherapy',
-      scaleHighlight: 'Day-2 Global Finalist Selection • 15,000+ Speech Audio Clips (RAVDESS/CREMA-D)',
-      description: 'AI-driven vocal biomarker companion developed for LaserHacks 2025 at Lasell University USA. Analyzes micro-acoustic voice tremor, spectral contrast, and MFCC features using a Bidirectional LSTM for longitudinal patient teletherapy tracking.',
+      skills: 'Acoustic Biomarkers, MFCC Features, BiLSTM Neural Network, Telehealth',
+      scaleHighlight: 'Day-2 Global Finalist Selection • 15,000+ Audio Samples (RAVDESS/CREMA-D)',
+      description: 'A telehealth prototype built for LaserHacks 2025 that analyzes voice pitch and emotional tone from speech to help therapists monitor patient mood trends over time.',
       accent: '#3B82F6'
     }
   ];

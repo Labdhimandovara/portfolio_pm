@@ -8,23 +8,23 @@ export const PortfolioJourney: React.FC = () => {
       location: "Bengaluru (Virtual)",
       title: "Razorpay Buildathon 2026 — Raya Agentic Commerce",
       org: "Razorpay",
-      desc: "Built Raya, an MCP-powered agentic commerce platform connecting 3 merchant catalogs for autonomous discovery and secure 6-gate checkout ready for Razorpay's 12M+ merchant ecosystem.",
-      tags: ["Agentic Commerce", "MCP Protocol", "6-Gate Engine"]
+      desc: "Built Raya, an agentic shopping assistant connecting multiple merchant catalogs. Implemented a 6-gate checkout workflow designed for Razorpay's 12M+ merchant ecosystem.",
+      tags: ["Agentic Commerce", "MCP Protocol", "6-Gate Checkout"]
     },
     {
       period: "Jul 2026 – Aug 2026",
       location: "Remote",
-      title: "AI Prompt Engineer Intern — Real-Time Voice Agents",
+      title: "AI Engineer Intern — Real-Time Voice Agents",
       org: "Edysor AI",
-      desc: "Developed real-time voice agents using Agora, Pipecat, Deepgram, Groq, and Cartesia with low latency. Automated a 100-turn benchmarking harness tracking P50, P90, and P95 latency metrics.",
-      tags: ["Voice AI", "100-Turn Latency Benchmark", "Agora vs Pipecat"]
+      desc: "Built real-time voice agents using Agora, Pipecat, Deepgram, and Cartesia. Created a 100-turn automated benchmarking tool to measure end-to-end conversational latency and interruption handling.",
+      tags: ["Voice AI", "Latency Benchmarking", "Agora vs Pipecat"]
     },
     {
       period: "Jul 2026",
       location: "Mumbai",
-      title: "Nomura KakushIN 10.0 — Finalist (Dhan Saarthi / Cortex)",
+      title: "Nomura KakushIN 10.0 — Finalist (Dhan Saarthi)",
       org: "Nomura Information Technology Division",
-      desc: "Recognized as a Finalist from 1,000+ participating teams. Architected Dhan Saarthi: a 3-layer inclusive financial companion spanning 10+ modules and 50+ screens with vernacular voice assistance.",
+      desc: "Selected as a Finalist among 1,000+ participating teams. Built Dhan Saarthi, an inclusive vernacular financial app spanning 10+ modules and 50+ screens to help rural and first-time users bank confidently.",
       tags: ["Fintech Inclusion", "50+ Screens", "10+ Modules"]
     },
     {
@@ -32,23 +32,23 @@ export const PortfolioJourney: React.FC = () => {
       location: "Pune",
       title: "Department Magazine Head & Design Head",
       org: "Symbiosis Institute of Technology",
-      desc: "Directed end-to-end publication lifecycle: editorial voice, Figma visual design systems, print layouts, and cross-functional coordination between writers, designers, and faculty reviewers.",
-      tags: ["360° Ownership", "Design Systems", "Editorial Leadership"]
+      desc: "Led the editorial direction, Figma visual design systems, and print publication layout, coordinating between writers, designers, and faculty reviewers.",
+      tags: ["Creative Direction", "Design Systems", "Editorial Leadership"]
     },
     {
       period: "Nov 2025",
       location: "Global Hackathon (SCRS & Lasell University, USA)",
       title: "LaserHacks 2025 — Day-2 Global Finalist (Emodio)",
       org: "SCRS & Lasell University",
-      desc: "Advanced to the Day-2 Finals after global evaluation. Engineered Emodio: an AI-driven vocal biomarker teletherapy platform analyzing longitudinal patient acoustic patterns.",
-      tags: ["Acoustic Biomarkers", "Global Finalist", "Audio ML"]
+      desc: "Selected for the Day-2 Global Finals. Built Emodio, an audio AI companion that detects voice pitch and emotional tone to help therapists monitor patient mood trends.",
+      tags: ["Audio AI", "Global Finalist", "Healthcare ML"]
     },
     {
       period: "2023 – 2027",
       location: "Pune, Maharashtra",
       title: "B.Tech in Electronics & Telecommunication (CGPA 8.4)",
       org: "Symbiosis Institute of Technology",
-      desc: "Pursuing engineering degree with a focus on signal processing, telecommunications, deep learning models, and real-time interactive product software.",
+      desc: "Focusing on signal processing, telecommunications, deep learning models, and real-time interactive software systems.",
       tags: ["B.Tech ENTC", "CGPA 8.4", "Signal Processing"]
     },
     {
@@ -56,7 +56,7 @@ export const PortfolioJourney: React.FC = () => {
       location: "Indore, Madhya Pradesh",
       title: "Foundational Leadership & Academics",
       org: "National Public School (Gandhinagar)",
-      desc: "Served as Principal Representative (2020-2021) and Cultural Head (2021-2022) managing 5+ major productions. Graduated with Class X 9.5 CGPA and Class XII 8.1 CGPA.",
+      desc: "Served as Principal Representative (2020–2021) and Cultural Head (2021–2022) organizing 5+ major productions. Graduated with 9.5 CGPA in Class X and 8.1 CGPA in Class XII.",
       tags: ["Cultural Head", "Principal Rep", "9.5 CGPA"]
     }
   ];

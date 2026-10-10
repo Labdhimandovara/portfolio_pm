@@ -17,45 +17,45 @@ export const RealEstateSection: React.FC = () => {
   const agents = [
     {
       name: "Search Agent",
-      role: "Property Catalog Discovery",
-      action: "Queries normalized property listings across 6+ Indian cities based on budget, BHK, and carpet area parameters.",
+      role: "Property Discovery",
+      action: "Searches property listings across 6+ Indian cities based on budget, BHK, and carpet area requirements.",
       input: "User search criteria (e.g. '3 BHK in Hinjewadi, Pune under ₹1.2 Cr')",
-      output: "Matching property ID candidates & key specs"
+      output: "Matching property list with key specs & pricing"
     },
     {
       name: "Knowledge Agent",
-      role: "PDF Brochure & Legal RAG",
-      action: "Performs semantic vector search across dense builder brochures, amenity charters, and legal terms.",
-      input: "Property ID + specific inquiry ('What are the clubhouse maintenance terms?')",
-      output: "Extracted legal clause with page citation"
+      role: "Brochure & Legal RAG",
+      action: "Searches builder brochures, amenity charters, and legal contracts to answer specific buyer questions.",
+      input: "Property name + question ('What are the clubhouse maintenance rules?')",
+      output: "Exact legal clause with brochure page citation"
     },
     {
       name: "Valuation Agent",
-      role: "Price & Square-Foot Analysis",
-      action: "Evaluates neighborhood price trends and benchmark square foot rates across micro-markets.",
-      input: "Property locality & price quote",
-      output: "Fair market valuation assessment"
+      role: "Price & Market Analysis",
+      action: "Compares current asking prices against neighborhood benchmarks and square-foot trends.",
+      input: "Property locality & quoted price",
+      output: "Fair market valuation estimate"
     },
     {
       name: "Location Profiler",
-      role: "Transit & Infrastructure Intelligence",
-      action: "Calculates commute distance to key IT hubs, metro stations, and hospitals.",
-      input: "Geo-coordinates or locality name",
-      output: "Connectivity score & upcoming infrastructure"
+      role: "Commute & Connectivity",
+      action: "Calculates real commute times to nearby tech parks, metro stations, schools, and hospitals.",
+      input: "Locality name or coordinates",
+      output: "Commute times & upcoming metro/road projects"
     },
     {
       name: "Summarizer Agent",
-      role: "Curated Buyer Brief Generator",
-      action: "Synthesizes multi-agent outputs into an editorial, human-readable executive recommendation.",
-      input: "Search, Knowledge & Valuation metadata",
-      output: "Structured buyer recommendation deck"
+      role: "Buyer Recommendation Brief",
+      action: "Pulls findings from all agents together into an easy-to-read summary for the homebuyer.",
+      input: "Search, Knowledge & Valuation notes",
+      output: "Clean, decision-ready buyer report"
     },
     {
       name: "CRM Synchronizer",
-      role: "Google Sheets Pipeline Sync",
-      action: "Automatically logs lead qualification, buyer intent, and recommended properties into Google Sheets CRM.",
-      input: "User contact + verified inquiry metadata",
-      output: "Real-time updated CRM row with zero human data entry"
+      role: "Google Sheets CRM Sync",
+      action: "Saves verified buyer preferences and shortlisted properties directly to Google Sheets in real time.",
+      input: "User contact + shortlist details",
+      output: "Automatically updated Google Sheet row"
     }
   ];
 
@@ -86,7 +86,7 @@ export const RealEstateSection: React.FC = () => {
           Riya — Multi-Agent Real Estate Assistant
         </h3>
         <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed">
-          Orchestrating 6 specialized autonomous CrewAI agents to transform fragmented property searches into an intelligent conversational experience backed by PDF prospectus retrieval and automated Google Sheets CRM sync.
+          Coordinating 6 specialized CrewAI agents to make home searching effortless—answering detailed questions from builder PDF brochures, comparing fair market valuations, and updating customer leads in Google Sheets.
         </p>
       </div>
 
