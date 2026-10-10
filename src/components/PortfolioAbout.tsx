@@ -124,10 +124,6 @@ export const PortfolioAbout: React.FC = () => {
                     alt={card.title}
                     className="w-full h-full object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity p-3 flex flex-col justify-end text-left">
-                    <span className="text-[11px] font-bold text-white">{card.title}</span>
-                    <span className="text-[9px] text-neutral-300">{card.subtitle}</span>
-                  </div>
                 </div>
               );
             })}
@@ -143,7 +139,7 @@ export const PortfolioAbout: React.FC = () => {
             I'm an AI engineer and product builder from India who loves building useful, intuitive products. I focus on connecting deep technical systems—like AI agents, real-time voice, and computer vision—with clean, human-centered experiences.
           </p>
           <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed font-normal">
-            B.Tech in Electronics & Telecommunication at Symbiosis Institute of Technology, Pune (CGPA 8.4). Nomura KakushIN Finalist (Team Cortex) • Razorpay Buildathon 2026 builder (Raya) • LaserHacks 2025 Global Finalist (Team Emodio).
+            B.Tech in Electronics & Telecommunication at Symbiosis Institute of Technology, Pune (CGPA 8.4).
           </p>
         </div>
 

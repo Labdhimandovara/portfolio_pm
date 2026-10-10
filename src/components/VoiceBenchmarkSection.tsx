@@ -20,26 +20,8 @@ export const VoiceBenchmarkSection: React.FC = () => {
   return (
     <article className="relative bg-white rounded-3xl sm:rounded-[2.5rem] border border-neutral-200/90 shadow-xl overflow-hidden p-6 sm:p-10 mb-12">
       
-      {/* Header */}
-      <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-neutral-100">
-        <div className="flex items-center gap-2.5">
-          <span className="px-3 py-1 rounded-full bg-orange-600 text-white text-xs font-mono font-bold tracking-wide">
-            VOICE AI & LATENCY TELEMETRY
-          </span>
-          <span className="text-xs font-mono font-medium text-neutral-400">
-            Edysor AI & Real-Time Research
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-mono text-orange-800 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-200 font-semibold">
-            100 Automated Conversation Turns Evaluated
-          </span>
-        </div>
-      </div>
-
       {/* Title */}
-      <div className="mt-6 space-y-4">
+      <div className="space-y-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 tracking-tight">
           Voice as a Product Interface
         </h3>

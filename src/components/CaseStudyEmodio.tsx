@@ -8,26 +8,8 @@ export const CaseStudyEmodio: React.FC = () => {
   return (
     <article className="relative bg-white rounded-3xl sm:rounded-[2.5rem] border border-neutral-200/90 shadow-xl overflow-hidden p-6 sm:p-10 mb-12">
       
-      {/* Header Badge */}
-      <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-neutral-100">
-        <div className="flex items-center gap-2.5">
-          <span className="px-3 py-1 rounded-full bg-blue-700 text-white text-xs font-mono font-bold tracking-wide">
-            LASELL UNIVERSITY USA • LASERHACKS 2025
-          </span>
-          <span className="text-xs font-mono font-medium text-neutral-400">
-            Acoustic Biomarkers & Teletherapy
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-mono text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200 font-bold">
-            Day-2 Global Finalist (Team Emodio)
-          </span>
-        </div>
-      </div>
-
       {/* Main Title */}
-      <div className="mt-6 space-y-4">
+      <div className="space-y-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 tracking-tight">
           Emodio — Acoustic AI & Vocal Biomarkers
         </h3>
@@ -64,8 +46,8 @@ export const CaseStudyEmodio: React.FC = () => {
         <div className="p-6 sm:p-8 rounded-3xl bg-neutral-50/80 border border-neutral-200/90 flex flex-col justify-between space-y-4 text-left">
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] font-mono font-bold uppercase text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md border border-purple-200">
-                01 • ACOUSTIC ANALYSIS
+              <span className="text-[10px] font-mono font-bold uppercase text-neutral-600 bg-neutral-100 px-2.5 py-1 rounded-md border border-neutral-200">
+                01 • Voice Analysis
               </span>
               <Waves className="w-4 h-4 text-purple-600" />
             </div>
@@ -86,8 +68,8 @@ export const CaseStudyEmodio: React.FC = () => {
         <div className="p-6 sm:p-8 rounded-3xl bg-neutral-50/80 border border-neutral-200/90 flex flex-col justify-between space-y-4 text-left">
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] font-mono font-bold uppercase text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">
-                02 • TEMPORAL MODEL
+              <span className="text-[10px] font-mono font-bold uppercase text-neutral-600 bg-neutral-100 px-2.5 py-1 rounded-md border border-neutral-200">
+                02 • Emotion Model
               </span>
               <Brain className="w-4 h-4 text-blue-600" />
             </div>

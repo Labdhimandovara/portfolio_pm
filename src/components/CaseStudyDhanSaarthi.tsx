@@ -65,27 +65,8 @@ export const CaseStudyDhanSaarthi: React.FC = () => {
   return (
     <article className="relative bg-white rounded-3xl sm:rounded-[2.5rem] border border-neutral-200/90 shadow-xl overflow-hidden p-6 sm:p-10 mb-12">
       
-      {/* Header with Verified Nomura Badge */}
-      <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-neutral-100">
-        <div className="flex items-center gap-2.5">
-          <span className="px-3 py-1 rounded-full bg-amber-600 text-white text-xs font-mono font-bold tracking-wide flex items-center gap-1.5">
-            <Award className="w-3.5 h-3.5" />
-            NOMURA KAKUSHIN 10.0 — FINALIST
-          </span>
-          <span className="text-xs font-mono font-semibold text-neutral-400">
-            Selected from 1,000+ Teams
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-mono text-neutral-700 bg-neutral-100 px-3 py-1 rounded-full border border-neutral-200 font-semibold">
-            10+ Modules • 50+ UI/UX Screens
-          </span>
-        </div>
-      </div>
-
       {/* Title & Description */}
-      <div className="mt-6 space-y-4">
+      <div className="space-y-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 tracking-tight">
           Dhan Saarthi — Making Financial Guidance Accessible
         </h3>
@@ -95,33 +76,33 @@ export const CaseStudyDhanSaarthi: React.FC = () => {
       </div>
 
       {/* 5-Step Product Flow Architecture */}
-      <div className="mt-8 p-6 rounded-2xl bg-amber-50/60 border border-amber-200/60">
-        <span className="text-xs font-mono uppercase tracking-wider font-bold text-amber-900 block mb-4">
+      <div className="mt-8 p-6 rounded-2xl bg-neutral-50/80 border border-neutral-200/90">
+        <span className="text-xs font-mono uppercase tracking-wider font-bold text-neutral-900 block mb-4">
           How We Built It • 5 Key Stages
         </span>
         <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 text-center">
-          <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
-            <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 1</span>
+          <div className="p-3 bg-white rounded-xl border border-neutral-200/80 shadow-xs">
+            <span className="text-[10px] font-mono font-bold text-neutral-500 block mb-1">STAGE 1</span>
             <p className="text-xs font-bold text-neutral-900">User Research</p>
             <p className="text-[11px] text-neutral-500 mt-1">Understanding why banking apps feel intimidating</p>
           </div>
-          <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
-            <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 2</span>
+          <div className="p-3 bg-white rounded-xl border border-neutral-200/80 shadow-xs">
+            <span className="text-[10px] font-mono font-bold text-neutral-500 block mb-1">STAGE 2</span>
             <p className="text-xs font-bold text-neutral-900">Core Needs</p>
             <p className="text-[11px] text-neutral-500 mt-1">Voice-first navigation, simple terms, clear privacy</p>
           </div>
-          <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
-            <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 3</span>
+          <div className="p-3 bg-white rounded-xl border border-neutral-200/80 shadow-xs">
+            <span className="text-[10px] font-mono font-bold text-neutral-500 block mb-1">STAGE 3</span>
             <p className="text-xs font-bold text-neutral-900">UI/UX Design</p>
             <p className="text-[11px] text-neutral-500 mt-1">10 key modules and 50+ prototype screens</p>
           </div>
-          <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
-            <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 4</span>
+          <div className="p-3 bg-white rounded-xl border border-neutral-200/80 shadow-xs">
+            <span className="text-[10px] font-mono font-bold text-neutral-500 block mb-1">STAGE 4</span>
             <p className="text-xs font-bold text-neutral-900">Smart Features</p>
             <p className="text-[11px] text-neutral-500 mt-1">Voice assistant + simple cashflow calculations</p>
           </div>
-          <div className="p-3 bg-white rounded-xl border border-amber-200/80 shadow-xs">
-            <span className="text-[10px] font-mono font-bold text-amber-700 block mb-1">STAGE 5</span>
+          <div className="p-3 bg-white rounded-xl border border-neutral-200/80 shadow-xs">
+            <span className="text-[10px] font-mono font-bold text-neutral-500 block mb-1">STAGE 5</span>
             <p className="text-xs font-bold text-neutral-900">User Experience</p>
             <p className="text-[11px] text-neutral-500 mt-1">Gentle savings reminders & offline support</p>
           </div>
@@ -156,7 +137,7 @@ export const CaseStudyDhanSaarthi: React.FC = () => {
           {/* Layer 2 */}
           <div className="p-4 sm:p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-mono font-bold text-sm">
+              <div className="w-10 h-10 rounded-xl bg-neutral-200 text-neutral-800 flex items-center justify-center font-mono font-bold text-sm">
                 02
               </div>
               <div>
@@ -174,7 +155,7 @@ export const CaseStudyDhanSaarthi: React.FC = () => {
           {/* Layer 3 */}
           <div className="p-4 sm:p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-mono font-bold text-sm">
+              <div className="w-10 h-10 rounded-xl bg-neutral-200 text-neutral-800 flex items-center justify-center font-mono font-bold text-sm">
                 03
               </div>
               <div>
@@ -209,17 +190,14 @@ export const CaseStudyDhanSaarthi: React.FC = () => {
                 onClick={() => setActiveModule(mod.id)}
                 className={`p-4 rounded-2xl cursor-pointer border transition-all ${
                   isSelected 
-                    ? 'bg-amber-50/70 border-amber-400 ring-2 ring-amber-500/20 shadow-sm' 
+                    ? 'bg-neutral-50 border-neutral-900 ring-1 ring-neutral-900/10 shadow-sm' 
                     : 'bg-white border-neutral-200/80 hover:border-neutral-300'
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-[10px] font-mono font-bold text-amber-700 px-2 py-0.5 rounded-full bg-amber-100/60">
-                    {mod.badge}
-                  </span>
-                  <CheckCircle className={`w-3.5 h-3.5 ${isSelected ? 'text-amber-600' : 'text-neutral-300'}`} />
+                  <h5 className="text-sm font-bold text-neutral-900">{mod.name}</h5>
+                  <CheckCircle className={`w-3.5 h-3.5 ${isSelected ? 'text-neutral-900' : 'text-neutral-300'}`} />
                 </div>
-                <h5 className="text-sm font-bold text-neutral-900">{mod.name}</h5>
                 <p className="text-xs font-semibold text-neutral-600 mt-0.5">{mod.role}</p>
                 <p className="text-[11px] text-neutral-500 mt-2 leading-relaxed">{mod.desc}</p>
               </div>

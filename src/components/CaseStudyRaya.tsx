@@ -30,26 +30,8 @@ export const CaseStudyRaya: React.FC = () => {
   return (
     <article className="relative bg-white rounded-3xl sm:rounded-[2.5rem] border border-neutral-200/90 shadow-xl overflow-hidden p-6 sm:p-10 mb-12">
       
-      {/* Editorial Header */}
-      <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-neutral-100">
-        <div className="flex items-center gap-2.5">
-          <span className="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-mono font-bold tracking-wide">
-            RAZORPAY BUILDATHON 2026
-          </span>
-          <span className="text-xs font-mono font-medium text-neutral-400">
-            Agentic Commerce Protocol
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-mono text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 font-medium">
-            ● 3 Connected Merchants Live
-          </span>
-        </div>
-      </div>
-
       {/* Main Title & Positioning */}
-      <div className="mt-6 space-y-4">
+      <div className="space-y-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 tracking-tight">
           Raya — Making Commerce Agentic
         </h3>

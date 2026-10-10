@@ -169,12 +169,6 @@ export const PortfolioWorks: React.FC = () => {
                     <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
                       {proj.description}
                     </p>
-
-                    {/* Scale Highlight Pill */}
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-mono font-semibold">
-                      <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-                      <span>{proj.scaleHighlight}</span>
-                    </div>
                   </div>
 
                   {/* Portfolio's 4-Box Metadata Grid (Brand, Projects, Year, Role, Skills) */}
